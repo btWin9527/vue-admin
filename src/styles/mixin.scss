@@ -1,0 +1,42 @@
+/*
+模块重复利用：
+1. @mixin:  -- 定义
+通过@mixin加名称的方式就可以定义一个Mixins模块，在模块内你可以添加任何你想重复使用的样式
+
+2. @include -- 调用mixin模块
+.button {
+    @include clearfix;
+}
+*/
+
+// 清除浮动模块
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// 自定义滚动条样式
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+// 需要全屏显示
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
