@@ -244,3 +244,5 @@ Vue.use(ElementUI, {locale})
 git rm --cached somefile
 git commit -m "remove somefile added by mistake"
 ```
+
+测试：dev分支新建
