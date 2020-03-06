@@ -22,15 +22,17 @@ module.exports = {
   outputDir: 'dist', //the directory when you use npm run build
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
+  // 该配置项用于设置是否为生产环境构建生成 source map，一般在生产环境下为了快速定位错误信息，我们都会开启 source map
   productionSourceMap: false,
-  //
+  // devServer 项用于配置 webpack-dev-server 的行为，使得我们可以对本地服务器进行相应配置
   devServer: {
-    port: port,
-    open: true,
+    port: port, // 端口地址
+    open: true,// 是否自动打开浏览器页面
     overlay: {
       warnings: false,
       errors: false
     },
+    // string | Object 代理设置
     proxy: {
       // change xxx-api/login => mock/login
       // detail: https://cli.vuejs.org/config/#devserver-proxy
@@ -44,6 +46,7 @@ module.exports = {
     },
     after: require('./mock/mock-server.js')
   },
+// configureWebpack 来进行修改，两者的不同点在于 chainWebpack 是链式修改，而 configureWebpack 更倾向于整体替换和修改
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
     // it can be accessed in index.html to inject the correct title.
@@ -54,6 +57,7 @@ module.exports = {
       }
     }
   },
+  // chainWebpack 配置项允许我们更细粒度的控制 webpack 的内部配置
   chainWebpack(config) {
     config.plugins.delete('preload') // TODO: need test
     config.plugins.delete('prefetch') // TODO: need test
