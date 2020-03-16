@@ -23,7 +23,8 @@
     "vue-giant-tree": "^0.1.2",
     "vue-router": "^3.0.3",
     "vue-social-share": "0.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "async-validator": "^1.10.0"
   },
   "devDependencies": {
     "@babel/core": "7.0.0",

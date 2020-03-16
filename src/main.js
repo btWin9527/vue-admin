@@ -10,6 +10,8 @@ import '@/styles/index.scss' // 全局css样式
 import '@/permission' // 权限控制
 import './icons' // icon
 import * as filters from './filters' // 导入全局过滤器
+import Alert from './components/alert/alert.js'
+Vue.prototype.$Alert = Alert
 /* 引入mock模拟接口*/
 import {
   mockXHR

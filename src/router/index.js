@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Layout from '@/layout'
 import vueStudyRouter from './modules/vueStudy'
 import nestedRouter from './modules/nested'
+import formCompRouter from './modules/formComp'
 import permissionRouter from './modules/permission'
 
 // 解决vue-router相同router跳转bug
@@ -70,6 +71,7 @@ export const constantRoutes =
     },
     vueStudyRouter,
     nestedRouter,
+    formCompRouter,
   ]
 // 权限路由
 export const asyncRoutes = permissionRouter;
