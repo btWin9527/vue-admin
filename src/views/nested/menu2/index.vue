@@ -29,23 +29,16 @@
       },
       /* facebook分享 */
       facebookShare() {
-        let _this = this
-        FB.ui({
-          method: 'share',
-          href: _this.href_com1,
-          quote: this.text_com1
-        }, function (response) {
-          // console.log('response', response)
-        });
+        let u = document.getElementsByClassName("share_url")[0].content;
+        let t = document.getElementsByClassName("share_title")[0].content;
+        window.open("http://www.facebook.com/sharer.php?u=" + encodeURIComponent(u) + "&t=" + encodeURIComponent(t), "sharer");
       },
       /* whatsapp分享 */
       shareWa(str) {
         // content是我们自己定义的一些需要分享的内容;
         let u = document.getElementsByClassName("share_url")[0].content;
-        console.log(u,'u')
         let t = document.getElementsByClassName("share_title")[0].content;
-        console.log(t,'t')
-        window.open ("http://web.whatsapp.com/send?text=" + encodeURIComponent(t) + encodeURIComponent("nn" + u) + "&via=lopscoop");
+        window.open("http://web.whatsapp.com/send?text=" + encodeURIComponent(t) + encodeURIComponent("nn" + u) + "&via=lopscoop");
       },
     },
   }
