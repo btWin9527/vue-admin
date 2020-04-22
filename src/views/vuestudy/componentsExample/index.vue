@@ -33,6 +33,7 @@
 </template>
 
 <script>
+  import axios from 'axios'
   import {TabSwitch, AjaxButton,DataTree} from "@/components";
   import {Child1, Child2, Child3} from "./components";
   // tab切换测试数据
@@ -98,10 +99,30 @@
         setTimeout(() => {
           this.ajaxBtnOption.loading = false;
         }, 500);
+      },
+      /**
+       * @method proxyTest    代理测试
+       * @description         在vue.config.js中配置devSever实现代理模式,原理是开发模式项目内部启动内置服务，通过服务端和服务端传递数据无需跨域，实现代理模式,将数据再传递给前端
+       */
+      proxyTest() {
+        axios
+          .get("/ws/geocoder/v1/", {
+            params: {
+              address: "北京市北京大学",
+              key: "G2XBZ-7LW3K-THWJE-ACUXT-ZZGIQ-KBB5T"
+            }
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
       }
     },
     beforeMount() {
       this.initData();
+      this.proxyTest();
     }
   }
 </script>

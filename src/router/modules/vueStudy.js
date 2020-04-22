@@ -12,40 +12,46 @@ let vueStudyRouter = {
   children: [
     {
       path: 'vueslot',
-      component: () => import('@/views/vuestudy/vueSlot/index'), // Parent router-view
+      component: () => import('@/views/vuestudy/vueSlot'), // Parent router-view
       name: 'vueSlot',
       meta: {title: 'Slot'},
     },
     {
       path: 'routerjump',
-      component: () => import('@/views/vuestudy/routerJump/index'),
+      component: () => import('@/views/vuestudy/routerJump'),
       meta: {title: 'RouterJump'},
       name: 'RouterJump',
     },
     {
       path: 'vueAttr',
-      component: () => import('@/views/vuestudy/vueAttr/index'),
+      component: () => import('@/views/vuestudy/vueAttr'),
       meta: {title: 'vueAttr'},
       name: 'vueAttr',
     },
     {
       path: 'article',
-      component: () => import('@/views/vuestudy/articleList/index'),
+      component: () => import('@/views/vuestudy/articleList'),
       meta: {title: 'article'},
       name: 'article',
     },
     {
       path: 'lifeCycle',
-      component: () => import('@/views/vuestudy/lifeCycle/index'),
+      component: () => import('@/views/vuestudy/lifeCycle'),
       meta: {title: 'lifeCycle'},
       name: 'lifeCycle',
     },
     {
       path: 'componentsexample',
-      component: () => import('@/views/vuestudy/componentsExample/index'),
+      component: () => import('@/views/vuestudy/componentsExample'),
       meta: {title: 'componentsExm'},
       name: 'componentsExm',
-    }
+    },
+    {
+      path: 'elecomponents',
+      component: () => import('@/views/vuestudy/eleComponents'),
+      meta: {title: 'eleComponents'},
+      name: 'eleComponents',
+    },
   ]
 };
 

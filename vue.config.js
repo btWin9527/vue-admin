@@ -42,6 +42,11 @@ module.exports = {
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
         }
+      },
+      '/ws':{
+        target: `https://apis.map.qq.com`,
+        changeOrigin: true,
+
       }
     },
     after: require('./mock/mock-server.js')
@@ -53,7 +58,8 @@ module.exports = {
     name: name,
     resolve: {
       alias: {
-        '@': resolve('src')
+        '@': resolve('src'),
+        '_ele': resolve('src/eleComponents'),
       }
     }
   },
