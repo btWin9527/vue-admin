@@ -1,5 +1,149 @@
 @charset "UTF-8";
 @import "../common/var";
-button {
-  color: red;
+@import "../mixins/button";
+@import "../mixins/mixins";
+@import "../mixins/utils";
+
+@include b(button) {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: $--button-default-background-color;
+  border: $--border-base;
+  border-color: $--button-default-border-color;
+  color: $--button-default-font-color;
+  -webkit-appearance: none; // 去除浏览器默认样式
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  font-weight: $--button-font-weight;
+  @include utils-user-select(none);
+
+  // + 表示相邻选择器
+  & + & {
+    margin-left: 10px;
+  }
+
+  @include button-size($--button-padding-vertical, $--button-padding-horizontal, $--button-font-size, $--button-border-radius);
+
+  &:hover,
+  &:focus {
+    color: $--color-primary;
+    border-color: $--color-primary-light-7;
+    background-color: $--color-primary-light-9;
+  }
+
+  &:active {
+    color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+    border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+    outline: none;
+  }
+
+  /* 解决Firefox点击按钮后出现的边框 */
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  // 选中以el-icon-开头的元素
+  & [class*="el-icon-"] {
+    & + span {
+      margin-left: 5px;
+    }
+  }
+
+  /* 朴素按钮样式 */
+  @include when(plain) {
+    &:hover,
+    &:focus {
+      background: $--color-white;
+      border-color: $--color-primary;
+      color: $--color-primary;
+    }
+
+    &:active {
+      background: $--color-white;
+      border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+      color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+      outline: none;
+    }
+  }
+
+  /* 激活状态样式 */
+  @include when(active) {
+    color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+    border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+  }
+
+  /* 禁用状态样式 */
+  @include when(disabled) {
+    &,
+    &:hover,
+    &:focus {
+      color: $--button-disabled-font-color;
+      cursor: not-allowed;
+      background-image: none;
+      background-color: $--button-disabled-background-color;
+      border-color: $--button-disabled-border-color;
+    }
+
+    &.el-button--text {
+      background-color: transparent;
+    }
+
+    &.is-plain {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $--color-white;
+        border-color: $--button-disabled-border-color;
+        color: $--button-disabled-font-color;
+      }
+    }
+  }
+
+  /* 加载中样式 */
+  @include when(loading) {
+    position: relative;
+    // 禁用点击事件
+    pointer-events: none;
+
+    &:before {
+      pointer-events: none;
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      border-radius: inherit;
+      background-color: rgba(255, 255, 255, .35);
+    }
+  }
+  /* 圆角按钮 */
+  @include when(round) {
+    border-radius: 20px;
+    padding: 12px 23px;
+  }
+
+  /* 圆形按钮 */
+  @include when(circle) {
+    border-radius: 50%;
+    padding: $--button-padding-vertical;
+  }
+
+  /* 自定义状态按钮 */
+  @include m(primary) {
+    @include button-variant($--button-primary-font-color, $--button-primary-background-color, $--button-primary-border-color);
+  }
+
+  /* 按钮尺寸类型 */
+  @include m(medium) {
+    @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);
+    @include when(circle) {
+      padding: $--button-medium-padding-vertical;
+    }
+  }
 }
+

@@ -5,7 +5,45 @@
 -------------------------- */
 $--color-white: #FFFFFF !default;
 $--color-black: #000000 !default;
+$--color-primary: #409EFF !default;
+$--border-color-base: #DCDFE6 !default;
+$--color-text-regular: #606266 !default;
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* c6e2ff */
+$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
+$--color-text-placeholder: #C0C4CC !default;
+
+/* Typography(排版)
+-------------------------- */
+$--font-weight-primary: 500 !default;
+$--font-size-base: 14px !default;
+
+/* Border
+-------------------------- */
+$--border-width-base: 1px !default;
+$--border-style-base: solid !default;
+$--border-radius-base: 4px !default;
+$--border-color-lighter: #EBEEF5 !default;
+$--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
 
 /* Button
 -------------------------- */
 $--button-active-shade-percent: 10% !default;
+$--button-hover-tint-percent: 20% !default;
+$--button-default-background-color: $--color-white !default;
+$--button-default-border-color: $--border-color-base !default;
+$--button-default-font-color: $--color-text-regular !default;
+$--button-font-weight: $--font-weight-primary !default;
+$--button-padding-vertical: 12px !default;
+$--button-padding-horizontal: 20px !default;
+$--button-font-size: $--font-size-base !default;
+$--button-border-radius: $--border-radius-base !default;
+$--button-disabled-font-color: $--color-text-placeholder !default;
+$--button-disabled-background-color: $--color-white !default;
+$--button-disabled-border-color: $--border-color-lighter !default;
+$--button-primary-font-color: $--color-white !default;
+$--button-primary-background-color: $--color-primary !default;
+$--button-primary-border-color: $--color-primary !default;
+$--button-medium-font-size: $--font-size-base !default;
+$--button-medium-border-radius: $--border-radius-base !default;
+$--button-medium-padding-vertical: 10px !default;
+$--button-medium-padding-horizontal: 20px !default;

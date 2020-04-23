@@ -1,1 +1,94 @@
+@import "function";
+@import "../common/var";
 /* 方法类函数 */
+/* BEM
+ -------------------------- */
+@mixin b($block) {
+  // !global效果类似!important,强制修改
+  $B: $namespace+'-'+$block !global;
+  // #{}插值语句,类似vue的{{}}
+  .#{$B} {
+    /*
+在引用混合样式的时候，可以先将一段代码导入到混合指令中，然后再输出混合样式，额外导入的部分将出现在 @content 标志的地方：
+  例子：
+  @mixin apply-to-ie6-only {
+  * html {
+    @content;
+  }
+}
+@include apply-to-ie6-only {
+  #logo {
+    background-image: url(/logo.gif);
+  }
+}
+
+编译为：
+* html #logo {
+  background-image: url(/logo.gif);
+}
+    */
+    @content;
+  }
+}
+
+@mixin e($element) {
+  $E: $element !global;
+  $selector: &; // 选择器
+  $currentSelector: ""; // 当前选择器
+  @each $unit in $element {
+    $currentSelector: #{$currentSelector + "." + $B + $element-separator + $unit + ","};
+  }
+
+  @if hitAllSpecialNestRule($selector) {
+    @at-root {
+      #{$selector} {
+        #{$currentSelector} {
+          @content;
+        }
+      }
+    }
+  } @else {
+    @at-root {
+      #{$currentSelector} {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin m($modifier) {
+  $selector: &;
+  $currentSelector: "";
+  @each $unit in $modifier {
+    $currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ","};
+  }
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+/* 区分不同状态 */
+@mixin when($state) {
+  /*
+  @at-root内联选择器模式 (编译出来的CSS无任何嵌套，让代码更加的简单)
+  例子：
+  .foo {
+    @at-root .bar {
+        color:gray;
+    }
+  }
+
+  .bar {
+   color: gray;
+  }
+
+  */
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
