@@ -10,7 +10,7 @@ function resolve(dir) {
 const name = defaultSettings.title || 'default page title' // page title
 
 // 配置端口
-const port = process.env.port || process.env.npm_config_port || 9528 // dev port
+const port = process.env.port || process.env.npm_config_port || 443 // dev port
 
 module.exports = {
   /* config the project publicPath
@@ -26,6 +26,7 @@ module.exports = {
   productionSourceMap: false,
   // devServer 项用于配置 webpack-dev-server 的行为，使得我们可以对本地服务器进行相应配置
   devServer: {
+    https: true, // 配置https环境
     port: port, // 端口地址
     open: true,// 是否自动打开浏览器页面
     overlay: {
@@ -37,7 +38,7 @@ module.exports = {
       // change xxx-api/login => mock/login
       // detail: https://cli.vuejs.org/config/#devserver-proxy
       [process.env.VUE_APP_BASE_API]: {
-        target: `http://127.0.0.1:${port}/mock`,
+        target: `https://127.0.0.1:${port}/mock`,
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''

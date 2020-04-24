@@ -445,3 +445,18 @@ export function objKeySort(arys) {
   }
   return newObj; //返回排好序的新对象
 }
+
+// Array.find, Array.findIndex
+export const arrayFindIndex = function (arr, pred) {
+  for (let i = 0; i !== arr.length; ++i) {
+    if (pred(arr[i])) {
+      return i;
+    }
+  }
+  return -1;
+};
+
+export const arrayFind = function (arr, pred) {
+  const idx = arrayFindIndex(arr, pred);
+  return idx !== -1 ? arr[idx] : undefined;
+};
