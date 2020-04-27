@@ -2,7 +2,8 @@
   <div style="padding: 30px;">
     <a :href="tw_href" @click="twitterShare">twitter分享</a>
     <p @click="facebookShare">faceBook分享</p>
-    <p @click="shareWa" class="xq-whatsapp" data-action="share/whatsapp/share">whatsapp分享</p>
+    <p @click="shareWa" class="xq-whatsapp" data-action="share/whatsapp/share">
+      whatsapp分享</p>
     <p @click="shareWa">分享4</p>
     <p>分享5</p>
   </div>
@@ -41,6 +42,9 @@
         window.open("http://web.whatsapp.com/send?text=" + encodeURIComponent(t) + encodeURIComponent("nn" + u) + "&via=lopscoop");
       },
     },
+    beforeMount() {
+
+    }
   }
 </script>
 

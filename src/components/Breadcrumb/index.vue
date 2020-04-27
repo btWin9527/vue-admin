@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import pathToRegexp from 'path-to-regexp'
+  // 处理 url 中地址与参数，能够很方便得到我们想要的数据
+  var pathToRegexp = require('path-to-regexp');
 
 export default {
   data() {

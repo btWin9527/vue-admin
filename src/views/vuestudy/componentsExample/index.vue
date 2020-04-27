@@ -25,16 +25,12 @@
         异步请求按钮
       </AjaxButton>
     </div>
-    <div class="cont-item">
-      <h2 class="cont-item-title">3. 自定义渲染大数据tree组件</h2>
-<!--      <DataTree/>-->
-    </div>
   </div>
 </template>
 
 <script>
   import axios from 'axios'
-  import {TabSwitch, AjaxButton,DataTree} from "@/components";
+  import {TabSwitch, AjaxButton} from "@/components";
   import {Child1, Child2, Child3} from "./components";
   // tab切换测试数据
   let tabList = [
@@ -47,7 +43,6 @@
       // eslint-disable-next-line vue/no-unused-components
       TabSwitch,
       AjaxButton,
-      DataTree,
       Child1,
       Child2,
       Child3,
@@ -66,12 +61,6 @@
           customStyle: {},
           loading: false,
         },
-        tree:[
-          {
-            id:1,
-            name:123
-          }
-        ]
       }
     },
     methods: {

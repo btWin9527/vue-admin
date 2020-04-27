@@ -245,4 +245,10 @@ git rm --cached somefile
 git commit -m "remove somefile added by mistake"
 ```
 
-测试：dev分支新建
+## 14. 项目规划
+
++ 项目构建
+
+
++ vuex配置
+
