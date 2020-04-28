@@ -2,12 +2,16 @@
 
 /* BEM support Func
  -------------------------- */
+// 获取选择器
 @function selectorToString($selector) {
   $selector: inspect($selector);
+  //slice截取方法：用负数当参数，相当于是length+start,length+end.
+  // var s = "abcdefg"; s.slice(3,-2)   // Returns "de"
   $selector: str-slice($selector, 2, -2);
   @return $selector;
 }
 
+// 是否包含修饰符
 @function containsModifier($selector) {
   $selector: selectorToString($selector);
 
@@ -18,6 +22,7 @@
   }
 }
 
+// 判断是否为包含状态标识
 @function containWhenFlag($selector) {
   $selector: selectorToString($selector);
 
@@ -28,6 +33,7 @@
   }
 }
 
+// 判断是否包含伪类
 @function containPseudoClass($selector) {
   $selector: selectorToString($selector);
 
@@ -37,7 +43,7 @@
     @return false
   }
 }
-
+// 判断是否存在特殊的嵌套
 @function hitAllSpecialNestRule($selector) {
 
   @return containsModifier($selector) or containWhenFlag($selector) or containPseudoClass($selector);

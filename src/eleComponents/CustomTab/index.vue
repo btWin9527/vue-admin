@@ -19,6 +19,32 @@
       },
       beforeLeave: Function, // 切换标签之前的钩子函数
       stretch: Boolean // 标签的宽度是否自撑开
+    },
+    provide() { // 传递this
+      return {rootTab: this};
+    },
+    data() {
+      return {
+        currentName: this.value || this.activeName,
+        panes: []
+      }
+    },
+    watch: {
+      activeName(value) {
+        this.setCurrentName(value);
+      },
+      value(value) {
+        this.setCurrentName(value);
+      },
+      currentName(value) {
+        if (this.$refs.nav) {
+          this.$nextTick(() => {
+            this.$refs.nav.$nextTick(() => {
+              this.$refs.nav.scrollToActiveTab();
+            })
+          })
+        }
+      }
     }
   }
 </script>
