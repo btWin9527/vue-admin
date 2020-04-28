@@ -11,11 +11,11 @@
         :tabKey="tabOption.tabKey"
         :tabList="tabOption.tabList"/>
       <!-- 动态组件配合keep-alive避免重新加载 -->
-      <transition>
-        <keep-alive>
-          <component :is="tabOption.currentView"></component>
-        </keep-alive>
-      </transition>
+      <!--      <transition>-->
+      <keep-alive>
+        <component :is="tabOption.currentView"></component>
+      </keep-alive>
+      <!--      </transition>-->
     </div>
     <div class="cont-item">
       <h2 class="cont-item-title">2. 自定义请求按钮</h2>
