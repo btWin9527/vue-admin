@@ -282,7 +282,5 @@ git commit -m "remove somefile added by mistake"
            ├── PostCard       # 帖子组件(包含title和content) 
            ├── PostForm       # 发新贴表单组件
            └── index.jsx      # 导出公共组件
-├──     
-└──
-|
+           
 ```
