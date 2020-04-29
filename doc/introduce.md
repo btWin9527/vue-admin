@@ -39,4 +39,4 @@
 ├── postcss.config.js         # postcss配置 
 ├── vue.config.js             # vue-cli配置 
 ```
-222222
+22
