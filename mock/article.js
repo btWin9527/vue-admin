@@ -13,7 +13,7 @@ for (let i = 0; i < count; i++) {
     timestamp: +Mock.Random.date('T'),// 随机时间戳
     author: '@first',
     reviewer: '@first',
-    title: '@title(5,10)',//生成5-10个单词组成的标dfd题
+    title: '@title(5,10)',//生成5-10个单词组成的标dfd题dd
     content_short: 'mock data',
     content: baseContent,
     forecast: '@float(0,100,2,2)',// 生成0到100之间的浮点数,小数点后尾数为2到2位
