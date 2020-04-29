@@ -39,4 +39,5 @@
 ├── postcss.config.js         # postcss配置 
 ├── vue.config.js             # vue-cli配置 
 ```
-22
+34324
+1. ctrl + k  进行commit操作
