@@ -116,6 +116,8 @@
     },
     methods: {
       handleChange(event) {
+        // todo: 测试dispatch方法
+        this.dispatch('eleComponents', 'getTestBtn');
         const val = this.checked ? this.inactiveValue : this.activeValue;
         this.$emit('input', val);
         this.$emit('change', val);

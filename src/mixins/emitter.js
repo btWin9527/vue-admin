@@ -30,7 +30,6 @@ export default {
       // while循环，用于循环父组件，直到找到或者到达根元素，匹配不到
       while (parent && (!name || name !== componentName)) {
         parent = parent.$parent;
-
         if (parent) {
           name = parent.$options.name;
         }
