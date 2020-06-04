@@ -44,7 +44,7 @@ module.exports = {
           ['^' + process.env.VUE_APP_BASE_API]: ''
         }
       },
-      '/ws':{
+      '/ws': {
         target: `https://apis.map.qq.com`,
         changeOrigin: true,
 
@@ -98,7 +98,7 @@ module.exports = {
       .end()
 
     config
-    // https://webpack.js.org/configuration/devtool/#development
+      // https://webpack.js.org/configuration/devtool/#development
       .when(process.env.NODE_ENV === 'development',
         config => config.devtool('cheap-source-map')
       )
@@ -141,6 +141,10 @@ module.exports = {
           config.optimization.runtimeChunk('single')
         }
       )
+    // 配置webpack-analyzer
+    config
+      .plugin('webpack-bundle-analyzer')
+      .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
   }
 
 
