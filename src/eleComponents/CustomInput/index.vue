@@ -60,12 +60,12 @@
             </i>
           </template>
           <i v-if="showClear"
-             class="gxy-input__icon gxy-icon-circle-close gxy-input__clear"
+             class="el-input__icon el-icon-circle-close gxy-input__clear"
              @mousedown.prevent
              @click="clear"
           ></i>
           <i v-if="showPwdVisible"
-             class="gxy-input__icon gxy-icon-view gxy-input__clear"
+             class="el-input__icon el-icon-view gxy-input__clear"
              @click="handlePasswordVisible"
           ></i>
           <span v-if="isWordLimitVisible" class="gxy-input__count">
@@ -111,15 +111,15 @@
 </template>
 
 <script>
-import emitter from '@/mixins/emitter';
-import Migrating from '@/mixins/migrating';
-import calcTextareaHeight from './calcTextareaHeight';
-import merge from '@/utils/merge';
+import emitter from '@/mixins/emitter'; // 配置多级组件调用事件绑定
+import Migrating from '@/mixins/migrating'; // 开发环境下提示一些迁移或者即将修改的属性和方法的(应用方法: getMigratingConfig)
+import calcTextareaHeight from './calcTextareaHeight'; // 通过获取要计算textarea上的style, 并赋值给js生成的textarea元素，并计算它的高度进而推算可放大和缩小的范围
+import merge from '@/utils/merge'; //
 import {isKorean} from '@/utils/shared'; // 是否是朝鲜语
 
 export default {
-  name: 'ElInput',
-  componentName: 'ElInput',
+  name: 'CustomInput',
+  componentName: 'CustomInput',
   mixins: [emitter, Migrating],
   inheritAttrs: false,
   inject: {
@@ -262,6 +262,7 @@ export default {
     value(val) {
       this.$nextTick(this.resizeTextarea);
       if (this.validateEvent) {
+        // 调用多级父组件方法
         this.dispatch('ElFormItem', 'el.form.change', [val]);
       }
     },

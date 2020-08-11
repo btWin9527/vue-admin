@@ -1,4 +1,12 @@
-import { kebabCase } from 'element-ui/src/utils/util';
+/*
+* @description
+* 该文件主要是用于开发环境下提示一些迁移或者即将修改的属性和方法的
+* 例如：
+* <el-input  icon="el-icon-date"/>
+* 因为icon属性被删除，则会在控制台提示属性移除的提示
+* */
+import {kebabCase} from '@/utils';
+
 /**
  * Show migrating guide in browser console.
  *
@@ -22,14 +30,17 @@ import { kebabCase } from 'element-ui/src/utils/util';
  */
 export default {
   mounted() {
+    // 开发环境下
     if (process.env.NODE_ENV === 'production') return;
     if (!this.$vnode) return;
-    const { props = {}, events = {} } = this.getMigratingConfig();
-    const { data, componentOptions } = this.$vnode;
+    const {props = {}, events = {}} = this.getMigratingConfig();
+    // 获取当前组件的配置
+    const {data, componentOptions} = this.$vnode;
     const definedProps = data.attrs || {};
     const definedEvents = componentOptions.listeners || {};
-
+    // 查找待
     for (let propName in definedProps) {
+      // hasOwnProperty只是保证是defineProps下的属性
       propName = kebabCase(propName); // compatible with camel case
       if (props[propName]) {
         console.warn(`[Element Migrating][${this.$options.name}][Attribute]: ${props[propName]}`);
@@ -44,6 +55,7 @@ export default {
     }
   },
   methods: {
+    // 获取迁移属性或者方法
     getMigratingConfig() {
       return {
         props: {},

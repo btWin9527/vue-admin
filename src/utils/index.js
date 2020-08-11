@@ -460,3 +460,11 @@ export const arrayFind = function (arr, pred) {
   const idx = arrayFindIndex(arr, pred);
   return idx !== -1 ? arr[idx] : undefined;
 };
+
+export const kebabCase = function(str) {
+  const hyphenateRE = /([^-])([A-Z])/g;
+  return str
+    .replace(hyphenateRE, '$1-$2')
+    .replace(hyphenateRE, '$1-$2')
+    .toLowerCase();
+};
