@@ -33,7 +33,14 @@
       type="success"
       effect="dark"/>
     <!-- icon属性被ui框架删除，使用时会在控制台提示属性已经删除(@/utils/migrating.js 该文件处理迁移提示) -->
-    <CustomInput v-model="cusInput" style="width: 200px;" placeholder="自定义输入框" clearable icon="el-icon-date"/>
+    <CustomInput
+      v-model="cusInput"
+      style="width: 200px;"
+      placeholder="自定义输入框"
+      clearable
+      icon="el-icon-date"
+      type="textarea"
+      showWordLimit/>
     <el-input v-model="elInput" style="width: 200px;" placeholder="el 输入框" clearable/>
   </div>
 </template>

@@ -104,6 +104,7 @@
       :aria-label="label"
     >
     </textarea>
+    {{ isWordLimitVisible }}
     <span v-if="isWordLimitVisible && type === 'textarea'" class="gxy-input__count">{{ textLength }}/{{
         upperLimit
       }}</span>
@@ -121,7 +122,7 @@ export default {
   name: 'CustomInput',
   componentName: 'CustomInput',
   mixins: [emitter, Migrating],
-  inheritAttrs: false,
+  inheritAttrs: false, // 组件将不会把未被注册的props呈现为普通的html属性，
   inject: {
     elForm: {
       default: ''
@@ -142,16 +143,16 @@ export default {
   },
 
   props: {
-    value: [String, Number],
-    size: String,
-    resize: String,
-    form: String,
-    disabled: Boolean,
-    readonly: Boolean,
-    type: {
+    value: [String, Number], // 同 v-model
+    size: String, // 输入框尺寸
+    resize: String, // 控制是否能被用户缩放
+    form: String, // 原生属性
+    disabled: Boolean, // 禁用
+    readonly: Boolean, // 只读
+    type: { // text, textarea
       type: String,
       default: 'text'
-    },
+    }, // 输入框类型
     autosize: {
       type: [Boolean, Object],
       default: false
@@ -169,22 +170,22 @@ export default {
         return true;
       }
     },
-    validateEvent: {
+    validateEvent: { // 是否触发表单校验
       type: Boolean,
       default: true
     },
-    suffixIcon: String,
-    prefixIcon: String,
-    label: String,
-    clearable: {
+    suffixIcon: String, // 输入框尾部图标
+    prefixIcon: String, // 输入框头部图标
+    label: String, // 关联的文字
+    clearable: { // 是否可清空
       type: Boolean,
       default: false
     },
-    showPassword: {
+    showPassword: { // 是否显示切换密码图标
       type: Boolean,
       default: false
     },
-    showWordLimit: {
+    showWordLimit: { // 是否显示输入字数统计
       type: Boolean,
       default: false
     },
@@ -345,6 +346,7 @@ export default {
       const lastCharacter = text[text.length - 1] || '';
       this.isComposing = !isKorean(lastCharacter);
     },
+    /* 当文本段落的组成完成或取消时, compositionend 事件将被触发 (具有特殊字符的触发, 需要一系列键和其他输入 */
     handleCompositionEnd(event) {
       if (this.isComposing) {
         this.isComposing = false;
@@ -354,8 +356,8 @@ export default {
     handleInput(event) {
       // should not emit input during composition
       // see: https://github.com/ElemeFE/element/issues/10516
+      // 判断是否支持compositionstart 事件，优化输入中文时在输入状态触发oninput事件
       if (this.isComposing) return;
-
       // hack for https://github.com/ElemeFE/element/issues/8548
       // should remove the following line when we don't support IE
       if (event.target.value === this.nativeInputValue) return;
@@ -405,7 +407,7 @@ export default {
       this.passwordVisible = !this.passwordVisible;
       this.focus();
     },
-    getInput() {
+    getInput() { // 获取绑定的引用信息, 及 dom元素
       return this.$refs.input || this.$refs.textarea;
     },
     getSuffixVisible() {
@@ -417,17 +419,14 @@ export default {
         (this.validateState && this.needStatusIcon);
     }
   },
-
   created() {
     this.$on('inputSelect', this.select);
   },
-
   mounted() {
     this.setNativeInputValue();
     this.resizeTextarea();
     this.updateIconOffset();
   },
-
   updated() {
     this.$nextTick(this.updateIconOffset);
   }
