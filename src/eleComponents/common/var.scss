@@ -130,6 +130,13 @@ $--input-mini-font-size: 12px !default;
 /// height||Other|4
 $--input-mini-height: 28px !default;
 
+/* Loading
+--------------------------*/
+/// height||Other|4
+$--loading-spinner-size: 42px !default;
+/// height||Other|4
+$--loading-fullscreen-spinner-size: 50px !default;
+
 /* Transition
 -------------------------- */
 $--all-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
