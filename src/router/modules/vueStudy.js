@@ -52,6 +52,12 @@ let vueStudyRouter = {
       meta: {title: 'eleComponents'},
       name: 'eleComponents',
     },
+    {
+      path: 'websocket',
+      component: () => import('@/views/vuestudy/webSocket'),
+      meta: {title: 'webSocket'},
+      name: 'webSocket',
+    },
   ]
 };
 
