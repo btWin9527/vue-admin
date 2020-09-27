@@ -13,4 +13,4 @@ export {
 export {
   default as CustomLoading
 }
-  from "./CustomLoading/loading.vue";
+  from "./CustomLoading";
