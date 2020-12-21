@@ -14,5 +14,7 @@ const getters = {
   roles: state => state.user.roles,
   // 权限路由 -- 侧边栏遍历的路由应该为权限路由
   permission_routes: state => state.permission.routes,
+  // test测试
+  test: state => state.testVuexAlong.test
 };
 export default getters

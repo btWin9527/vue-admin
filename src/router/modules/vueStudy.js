@@ -58,6 +58,12 @@ let vueStudyRouter = {
       meta: {title: 'webSocket'},
       name: 'webSocket',
     },
+    {
+      path: 'vuexalong',
+      component: () => import('@/views/vuestudy/vuexAlong'),
+      meta: {title: 'vuexAlong'},
+      name: 'vuexAlong',
+    },
   ]
 };
 
