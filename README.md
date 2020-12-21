@@ -233,7 +233,15 @@ Vue.use(ElementUI, {locale})
 ## 12. node-sass安装失败处理方法
 
 ```shell script
-    npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
+
+# linux、mac 下
+SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass
+ 
+# window 下
+set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ && npm install node-sass
+
+# 全局配置
+npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
 ```
 
 ## 13. git取消对某个文件的跟踪
