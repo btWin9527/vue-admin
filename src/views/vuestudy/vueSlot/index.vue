@@ -38,6 +38,8 @@
 
 <script>
 import CusDialog from "./CusDialog";
+import {prefixStyle} from "../../../utils";
+
 export default {
   components: {
     CusDialog
@@ -102,6 +104,7 @@ export default {
      * @params  {Function} callback    动画结束回调方法
      */
     closeAnimate({ targetEleX, targetEleY, dialogRef, scaleRate }, callback) {
+      const transform = prefixStyle('transform');
       let dialogContRef = this.$refs[dialogRef].$refs.dialog;
       let dialogContRect = dialogContRef.getBoundingClientRect();
       let dialogContX = dialogContRect.x;
@@ -109,7 +112,7 @@ export default {
       let dialogContW = dialogContRect.width;
       let dialogContH = dialogContRect.height;
       let offsetRate = (1 - scaleRate) / 2;
-      dialogContRef.style["transform"] = `translate3d(${-(
+      dialogContRef.style[transform] = `translate3d(${-(
         dialogContX -
         targetEleX +
         dialogContW * offsetRate
