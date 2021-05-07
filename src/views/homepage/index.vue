@@ -14,62 +14,6 @@
         </ul>
       </li>
     </ul>
-
-    <h2>第二部分：开发规定</h2>
-    <ul>
-      <li>
-        <h3> 1. data变量名--小驼峰命名</h3>
-        <ul>
-          <li>
-           <h4> 1.1 同一类数据命名使用对象包裹(article:{list:[],state:false,loading:false})</h4>
-          </li>
-          <li>
-           <h4> 1.2 变量初始化明确类型,禁止使用隐式类型转化;减少null初始化变量</h4>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <h3>2. methods方法命名--(_+小驼峰，目的区分变量名和方法名)</h3>
-        <ul>
-          <li>
-           <h4> 2.1 动词 + 名称 + 描述(最长三个单词)</h4>
-          </li>
-          <li>
-            <h4>2.2 点击事件为_click+doSomething,跳转事件_go+page,表单提交_submit+function</h4>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <h3>3. class类名 -- (-连接,最长三个单词,最外层为功能代表单词,使用less或scss时，将样式通过功能区分样式块)</h3>
-        <ul>
-          <li>
-            <h4>3.1 样式实例</h4>
-            <pre>
-          .login {
-              &-title {
-
-              }
-              &-form {
-
-              }
-          }
-        </pre>
-          </li>
-          <li>
-            <h4> 3.2 颜色值和字号大小需要提前变量定义,使用时直接调用</h4>
-            <pre>
-          $text-smallFont: 12px;
-          $color-red: #f00;
-          $bgc-grey: #ddd;
-          .demo {
-            background: $bgc-grey;
-            $color-red: #f00;
-          }
-        </pre>
-          </li>
-        </ul>
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -90,7 +34,7 @@
     },
     filters: {
       reformatOneTitle(val, index) {
-        let titArr = ['一', '二', '三', '四', '五', '六'];
+        let titArr = ['一', '二', '三', '四', '五', '六','七','八','九'];
         return `${titArr[index]}、 ${val}`
       },
       reformatTwoTitle(val, index1, index2) {

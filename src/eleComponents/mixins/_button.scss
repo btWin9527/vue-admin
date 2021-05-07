@@ -1,0 +1,104 @@
+@import "../common/var";
+
+/*
+  @mixin指令可以定义Mixins模块, 再使用@include导入;
+  同时支持写方法传参
+  例子：
+
+  定义button模块(_btn.scss):
+  @mixin button {
+    font-size: 1em;
+    padding: 0.5 em 1.0em;
+    text-decoration: none;
+    color: #fff;
+  }
+  使用button模块(btn.scss):
+  @import "_btn.scss";
+  .button-green {
+     @include button;
+     background: green;
+  }
+
+*/
+
+// 按钮默认样式
+@mixin button-plain($color) {
+  color: $color;
+  /*
+  Mix 函数是将两种颜色根据一定的比例混合在一起，生成另一种颜色
+  mix($color-1,$color-2,$weight);
+  $color-1 和 $color-2 指的是你需要合并的颜色，颜色可以是任何表达式，也可以是颜色变量。
+  $weight 为 合并的比例（选择权重），默认值为 50%，其取值范围是 0~1 之间,若为0，则显示$color-2颜色
+  */
+  background: mix($--color-white, $color, 90%);
+  border-color: mix($--color-white, $color, 60%);
+
+  &:hover,
+  &:focus {
+    background: $color;
+    border-color: $color;
+    color: $--color-white;
+  }
+
+  &:active {
+    background: mix($--color-black, $color, $--button-active-shade-percent);
+  }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: mix($--color-white, $color, 40%);
+      background-color: mix($--color-white, $color, 90%);
+      border-color: mix($--color-white, $color, 80%);
+    }
+  }
+}
+
+// 自定义按钮样式
+@mixin button-variant($color,$background-color,$border-color) {
+  color: $color;
+  background-color: $background-color;
+  border-color: $border-color;
+
+  &:hover,
+  &:focus {
+    background: mix($--color-white, $background-color, $--button-hover-tint-percent);
+    border-color: mix($--color-white, $border-color, $--button-hover-tint-percent);
+    color: $color;
+  }
+
+  &:active {
+    background: mix($--color-black, $background-color, $--button-active-shade-percent);
+    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
+    color: $color;
+  }
+
+  &.is-disabled {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: $--color-white;
+      background-color: mix($background-color, $--color-white);
+      border-color: mix($border-color, $--color-white);
+    }
+  }
+
+  /* 朴素按钮 */
+  &.is-plain {
+    @include button-plain($background-color);
+  }
+}
+
+// 自定义尺寸类按钮
+@mixin button-size($padding-vertical,$padding-horizontal,$font-size,$border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  /* 圆角按钮 */
+  &.is-round {
+    padding: $padding-vertical $padding-horizontal;
+  }
+}

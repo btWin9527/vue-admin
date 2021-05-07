@@ -1,0 +1,30 @@
+/* 常用配置枚举 */
+$namespace: 'gxy'; // 命名空间( 类名以什么开头 )
+/*
+BEM命名模式
+.block {}
+.block__element {}
+.block--modifier {}
+
+  · block 代表更高级的抽象或组件
+  · block__element 代表.block的后代, 用于形成一个完整的.block的整体
+  · block--modifier 代表.block的不同状态或不同版本
+
+例子：
+html:
+<button class="article__button--primary">按钮</button>
+scss:
+.article {
+  max-width: 200px;
+  &__button {
+    padding: 5px 8px;
+    &--primary {
+      background: blue;
+    }
+  }
+}
+
+*/
+$element-separator: '__'; // 分割符号( 命名分割符号 )
+$modifier-separator: '--'; // 修饰符号
+$state-prefix: 'is-'; // 状态类前缀( 与控制样式状态相关的前缀 )

@@ -11,11 +11,11 @@
         :tabKey="tabOption.tabKey"
         :tabList="tabOption.tabList"/>
       <!-- 动态组件配合keep-alive避免重新加载 -->
-      <transition>
-        <keep-alive>
-          <component :is="tabOption.currentView"></component>
-        </keep-alive>
-      </transition>
+      <!--      <transition>-->
+      <keep-alive>
+        <component :is="tabOption.currentView"></component>
+      </keep-alive>
+      <!--      </transition>-->
     </div>
     <div class="cont-item">
       <h2 class="cont-item-title">2. 自定义请求按钮</h2>
@@ -25,15 +25,12 @@
         异步请求按钮
       </AjaxButton>
     </div>
-    <div class="cont-item">
-      <h2 class="cont-item-title">3. 自定义渲染大数据tree组件</h2>
-<!--      <DataTree/>-->
-    </div>
   </div>
 </template>
 
 <script>
-  import {TabSwitch, AjaxButton,DataTree} from "@/components";
+  import axios from 'axios'
+  import {TabSwitch, AjaxButton} from "@/components";
   import {Child1, Child2, Child3} from "./components";
   // tab切换测试数据
   let tabList = [
@@ -46,7 +43,6 @@
       // eslint-disable-next-line vue/no-unused-components
       TabSwitch,
       AjaxButton,
-      DataTree,
       Child1,
       Child2,
       Child3,
@@ -65,12 +61,6 @@
           customStyle: {},
           loading: false,
         },
-        tree:[
-          {
-            id:1,
-            name:123
-          }
-        ]
       }
     },
     methods: {
@@ -98,10 +88,30 @@
         setTimeout(() => {
           this.ajaxBtnOption.loading = false;
         }, 500);
+      },
+      /**
+       * @method proxyTest    代理测试
+       * @description         在vue.config.js中配置devSever实现代理模式,原理是开发模式项目内部启动内置服务，通过服务端和服务端传递数据无需跨域，实现代理模式,将数据再传递给前端
+       */
+      proxyTest() {
+        axios
+          .get("/ws/geocoder/v1/", {
+            params: {
+              address: "北京市北京大学",
+              key: "G2XBZ-7LW3K-THWJE-ACUXT-ZZGIQ-KBB5T"
+            }
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
       }
     },
     beforeMount() {
       this.initData();
+      this.proxyTest();
     }
   }
 </script>

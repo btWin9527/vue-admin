@@ -2,6 +2,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import getters from './getters'
+import createVuexAlong from 'vuex-along'
+
 
 Vue.use(Vuex)
 
@@ -23,7 +25,8 @@ const modules = modulesFiles.keys().reduce((modules, modulePath) => {
 
 const store = new Vuex.Store({
   modules,
-  getters
+  getters,
+  // plugins: [createVuexAlong()]
 })
 
 export default store
