@@ -36,17 +36,18 @@ export default [
     response: config => {
       const { importance, type, title, page = 1, limit = 20, sort } = config.query
 
+      // 通过 importance, type, title过滤数据
       let mockList = List.filter(item => {
         if (importance && item.importance !== +importance) return false
         if (type && item.type !== type) return false
         if (title && item.title.indexOf(title) < 0) return false
         return true
       })
-
+      // 是否逆序
       if (sort === '-id') {
         mockList = mockList.reverse()
       }
-
+      // 处理分页操作,取出该范围数据  [limit * (page-1), limit * page)
       const pageList = mockList.filter((item, index) => index < limit * page && index >= limit * (page - 1))
 
       return {

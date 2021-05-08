@@ -16,7 +16,7 @@ import {
 } from '../mock'
 import moment from 'moment'//导入moment.js
 import promiseHandle from "./utils/promise";// 导入promise方法嵌套handle
-import VueSocketIO from 'vue-socket.io';
+// import VueSocketIO from 'vue-socket.io';
 
 if (process.env.NODE_ENV === 'production') {
   mockXHR()
@@ -30,10 +30,10 @@ if (process.env.NODE_ENV === 'production') {
 * vuex.actionPrefix  string     action前缀
 * vuex.mutationPrefix	 string   mutation前缀
 * */
-Vue.use(new VueSocketIO({
-  debug: false,
-  connection: "127.0.0.1:9999"
-}));
+// Vue.use(new VueSocketIO({
+//   debug: false,
+//   connection: "127.0.0.1:9999"
+// }));
 
 // set ElementUI lang to EN
 Vue.use(ElementUI, {locale})

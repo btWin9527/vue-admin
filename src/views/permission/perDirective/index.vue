@@ -3,6 +3,7 @@
     <h3>指令权限</h3>
     <SwitchRoles @change="handleRolesChange"/>
     <div :key="key" style="margin-top:30px;">
+      <!-- admin权限显示 -->
       <div>
         <span v-permission="['admin']" class="permission-alert">
           <el-tag class="permission-tag" size="small">admin权限</el-tag>
@@ -11,6 +12,7 @@
           v-permission="['admin']"
         </el-tag>
       </div>
+      <!-- editor权限显示 -->
       <div>
         <span v-permission="['editor']" class="permission-alert">
           <el-tag class="permission-tag" size="small">editor权限</el-tag>
@@ -19,6 +21,7 @@
           v-permission="['editor']"
         </el-tag>
       </div>
+      <!-- 任何权限都显示 -->
       <div>
         <span v-permission="['admin','editor']" class="permission-alert">
           Both
