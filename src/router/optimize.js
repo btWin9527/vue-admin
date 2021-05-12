@@ -2,7 +2,7 @@
 * 访问/xxx时，如果有叫xxx的文件夹，就直接用xxx文件下面的index.vue，如果没有就直接用xxx.vue；
 * 访问/xxx/yyy就是使用xxx文件夹下面的yyy.vue；记得改成驼峰命名
 * */
-import Vue from 'vue'
+// import Vue from 'vue'
 import Router from 'vue-router'
 
 /* require.context

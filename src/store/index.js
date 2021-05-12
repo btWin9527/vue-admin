@@ -1,5 +1,5 @@
 /* vuex配置 */
-import Vue from 'vue'
+// import Vue from 'vue'
 import Vuex from 'vuex'
 import getters from './getters'
 import createVuexAlong from 'vuex-along'

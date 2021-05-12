@@ -62,7 +62,10 @@ module.exports = {
         '@': resolve('src'),
         '_ele': resolve('src/eleComponents'),
       }
-    }
+    },
+    externals: {
+      vue: "Vue", // 右侧字符串为vue生成实例后的名称 Vue
+    },
   },
   // chainWebpack 配置项允许我们更细粒度的控制 webpack 的内部配置
   chainWebpack(config) {

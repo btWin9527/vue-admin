@@ -1,4 +1,4 @@
-import Vue from 'vue';
+// import Vue from 'vue';
 import {addClass, removeClass} from "@/utils/dom";
 
 let hasModal = false;
