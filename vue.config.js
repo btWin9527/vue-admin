@@ -63,6 +63,7 @@ module.exports = {
         '_ele': resolve('src/eleComponents'),
       }
     },
+    // externals  防止将某些 import 的包(package)打包到 bundle 中，而是在运行时(runtime)再去从外部获取这些扩展依赖(external dependencies)
     externals: {
       vue: "Vue", // 右侧字符串为vue生成实例后的名称 Vue
     },
