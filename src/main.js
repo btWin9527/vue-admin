@@ -14,7 +14,7 @@ import * as filters from './filters' // 导入全局过滤器
 import {
   mockXHR
 } from '../mock'
-import moment from 'moment'//导入moment.js
+// import moment from 'moment'//导入moment.js
 import promiseHandle from "./utils/promise";// 导入promise方法嵌套handle
 // import VueSocketIO from 'vue-socket.io';
 
@@ -39,9 +39,9 @@ if (process.env.NODE_ENV === 'production') {
 Vue.use(ElementUI, {locale})
 Object.keys(filters).forEach(key => Vue.filter(key, filters[key]));// 注册过滤器
 Vue.config.productionTip = false
-Vue.prototype.$moment = moment;// 将moment.js赋值到vue实例上
+// Vue.prototype.$moment = moment;// 将moment.js赋值到vue实例上
 Vue.prototype.$promise = promiseHandle;
-moment.locale('zh-cn');//moment.js汉化
+// moment.locale('zh-cn');//moment.js汉化
 new Vue({
   router,
   store,

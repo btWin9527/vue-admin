@@ -1,5 +1,5 @@
 // import Vue from 'vue'
-import Router from 'vue-router'
+// import Router from 'vue-router'
 /* Layout */
 import Layout from '@/layout'
 import vueStudyRouter from './modules/vueStudy'
@@ -7,11 +7,11 @@ import nestedRouter from './modules/nested'
 import permissionRouter from './modules/permission'
 
 // 解决vue-router相同router跳转bug
-const routerPush = Router.prototype.push
-Router.prototype.push = function push(location) {
+const routerPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
   return routerPush.call(this, location).catch(error => error)
 }
-Vue.use(Router)
+Vue.use(VueRouter)
 
 /*
 * 1. 控制是否在侧边栏显示
@@ -75,7 +75,7 @@ export const constantRoutes =
 export const asyncRoutes = permissionRouter;
 
 
-const createRouter = () => new Router({
+const createRouter = () => new VueRouter({
   /*
   * 后端配置
   * springBoot配置：
