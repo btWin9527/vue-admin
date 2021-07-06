@@ -1,0 +1,199 @@
+[
+  {
+    "x1": 103,
+    "y1": 2,
+    "x2": 790,
+    "y2": 14,
+    "x3": 787,
+    "y3": 200,
+    "x4": 100,
+    "y4": 188,
+    "classIdx": 500,
+    "phase": 3,
+    "course": { "id": 2, "name": "\u6570\u5b66" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"1+\\\\frac{1}{2}-\\\\frac{5}{6}+\\\\frac{7}{12}-\\\\frac{9}{20}+\\\\frac{11}{30}-\\\\frac{13}{42}=\\\\frac{6}{7}\",\"content\":\"1+\\\\frac{1}{2}-\\\\frac{5}{6}+\\\\frac{7}{12}-\\\\frac{9}{20}+\\\\frac{11}{30}-\\\\frac{13}{42}\",\"region\":{\"x1\":377,\"y1\":130,\"x2\":776,\"y2\":130,\"x3\":776,\"y3\":199,\"x4\":377,\"y4\":199},\"solution\":\"[{\\\"solutionName\\\":\\\"\u7b80\u4fbf\u8fd0\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"1+\\\\\\\\frac{1}{2}-\\\\\\\\frac{5}{6}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=1\\\\\\\\frac{1}{2}-\\\\\\\\frac{5}{6}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u52a0\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{9}{6}-\\\\\\\\frac{5}{6}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{4}{6}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u51cf\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{8}{12}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=(\\\\\\\\frac{8}{12}+\\\\\\\\frac{7}{12})-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{15}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u52a0\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{75}{60}-\\\\\\\\frac{27}{60}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=(\\\\\\\\frac{75}{60}-\\\\\\\\frac{27}{60})+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{48}{60}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u51cf\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{48}{60}+\\\\\\\\frac{22}{60}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=(\\\\\\\\frac{48}{60}+\\\\\\\\frac{22}{60})-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{70}{60}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u52a0\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{490}{420}-\\\\\\\\frac{130}{420}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{360}{420}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u51cf\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{6}{7}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]},{\\\"solutionName\\\":\\\"\u8131\u5f0f\u8ba1\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"1+\\\\\\\\frac{1}{2}-\\\\\\\\frac{5}{6}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=1\\\\\\\\frac{1}{2}-\\\\\\\\frac{5}{6}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u52a0\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{9}{6}-\\\\\\\\frac{5}{6}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{4}{6}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u51cf\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{8}{12}+\\\\\\\\frac{7}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{15}{12}-\\\\\\\\frac{9}{20}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u52a0\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{75}{60}-\\\\\\\\frac{27}{60}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{48}{60}+\\\\\\\\frac{11}{30}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u51cf\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{48}{60}+\\\\\\\\frac{22}{60}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{70}{60}-\\\\\\\\frac{13}{42}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u52a0\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{490}{420}-\\\\\\\\frac{130}{420}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{360}{420}\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u51cf\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=\\\\\\\\frac{6}{7}\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]}]\",\"suggestedJsonAnswer\":\"\"}"
+    ]
+  },
+  {
+    "x1": 126,
+    "y1": 2,
+    "x2": 681,
+    "y2": 2,
+    "x3": 681,
+    "y3": 100,
+    "x4": 126,
+    "y4": 100,
+    "classIdx": 607,
+    "phase": 3,
+    "course": { "id": 3, "name": "\u82f1\u8bed" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"B\",\"content\":\"That is $ANSWS$0$ANSWE$ art book. $CHOIS$$ANSWS$1$ANSWE$$CHOIE$ $OPTS$A. a$OPTE$ $OPTS$B. an$OPTE$ $OPTS$C. are$OPTE$ $OPTS$D. the$OPTE$ $OPTAS$a$OPTAE$ $OPTAS$an$OPTAE$ $OPTAS$are$OPTAE$ $OPTAS$the$OPTAE$\",\"region\":{\"x1\":126,\"y1\":66,\"x2\":199,\"y2\":66,\"x3\":199,\"y3\":100,\"x4\":126,\"y4\":100}}"
+    ]
+  },
+  {
+    "x1": 48,
+    "y1": 141,
+    "x2": 935,
+    "y2": 159,
+    "x3": 932,
+    "y3": 278,
+    "x4": 45,
+    "y4": 260,
+    "classIdx": 501,
+    "phase": 3,
+    "course": { "id": 2, "name": "\u6570\u5b66" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"9\u5343\u7c73=(9000)\u7c73\",\"content\":\"9\u5343\u7c73=()\u7c73\",\"region\":{\"x1\":88,\"y1\":144,\"x2\":376,\"y2\":144,\"x3\":376,\"y3\":188,\"x4\":88,\"y4\":188},\"solution\":\"[{\\\"solutionName\\\":\\\"\u5355\u4f4d\u8f6c\u6362\\\",\\\"solutionStepList\\\":[]}]\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"30\u5343\u7c73=(30000)\u7c73\",\"content\":\"30\u5343\u7c73=()\u7c73\",\"region\":{\"x1\":590,\"y1\":156,\"x2\":892,\"y2\":156,\"x3\":892,\"y3\":198,\"x4\":590,\"y4\":198},\"solution\":\"[{\\\"solutionName\\\":\\\"\u5355\u4f4d\u8f6c\u6362\\\",\\\"solutionStepList\\\":[]}]\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"9000\u5343\u514b=(9)\u5428\",\"content\":\"9000\u5343\u514b=()\u5428\",\"region\":{\"x1\":88,\"y1\":224,\"x2\":420,\"y2\":224,\"x3\":420,\"y3\":264,\"x4\":88,\"y4\":264},\"solution\":\"[{\\\"solutionName\\\":\\\"\u5355\u4f4d\u8f6c\u6362\\\",\\\"solutionStepList\\\":[]}]\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"10000\u5343\u514b=(10)\u5428\",\"content\":\"10000\u5343\u514b=()\u5428\",\"region\":{\"x1\":590,\"y1\":234,\"x2\":934,\"y2\":234,\"x3\":934,\"y3\":276,\"x4\":590,\"y4\":276},\"solution\":\"[{\\\"solutionName\\\":\\\"\u5355\u4f4d\u8f6c\u6362\\\",\\\"solutionStepList\\\":[]}]\",\"suggestedJsonAnswer\":\"\"}"
+    ]
+  },
+  {
+    "x1": 220,
+    "y1": 0,
+    "x2": 890,
+    "y2": 8,
+    "x3": 887,
+    "y3": 174,
+    "x4": 218,
+    "y4": 164,
+    "classIdx": 400,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"gu\u0101n f\u00fa - \u51a0\u670d\",\"content\":\"gua1n fu2\",\"region\":{\"x1\":217,\"y1\":0,\"x2\":330,\"y2\":0,\"x3\":330,\"y3\":75,\"x4\":217,\"y4\":75},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u51a0\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"gua1n\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u670d\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"fu2\\\"}}],\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}",
+      "{\"suggestedAnswer\":\"t\u00e9ng lu\u00f3 - \u85e4\u841d\",\"content\":\"te2ng luo2\",\"region\":{\"x1\":425,\"y1\":5,\"x2\":530,\"y2\":5,\"x3\":530,\"y3\":81,\"x4\":425,\"y4\":81},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u85e4\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"te2ng\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u841d\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"luo2\\\"}}],\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}",
+      "{\"suggestedAnswer\":\"ji\u011b m\u00e8n - \u89e3\u95f7\",\"content\":\"jie3 me4n\",\"region\":{\"x1\":613,\"y1\":14,\"x2\":712,\"y2\":14,\"x3\":712,\"y3\":85,\"x4\":613,\"y4\":85},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u89e3\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"jie3\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u95f7\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"me4n\\\"}}],\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}",
+      "{\"suggestedAnswer\":\"m\u01d0n ji\u00e9 - \u654f\u6377\",\"content\":\"mi3n jie2\",\"region\":{\"x1\":792,\"y1\":17,\"x2\":889,\"y2\":17,\"x3\":889,\"y3\":88,\"x4\":792,\"y4\":88},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u654f\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"mi3n\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6377\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"jie2\\\"}}],\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}",
+      "{\"suggestedAnswer\":\"d\u00f9 ju\u0101n - \u675c\u9e43\",\"content\":\"du4 jua1n\",\"region\":{\"x1\":218,\"y1\":91,\"x2\":330,\"y2\":91,\"x3\":330,\"y3\":169,\"x4\":218,\"y4\":169},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u675c\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"du4\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u9e43\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"jua1n\\\"}}],\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}",
+      "{\"suggestedAnswer\":\"f\u00fa r\u00f3ng - \u8299\u84c9\",\"content\":\"fu2 ro2ng\",\"region\":{\"x1\":426,\"y1\":98,\"x2\":531,\"y2\":98,\"x3\":531,\"y3\":171,\"x4\":426,\"y4\":171},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u8299\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"fu2\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u84c9\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"ro2ng\\\"}}],\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}",
+      "{\"suggestedAnswer\":\"g\u01ceng w\u00e8i - \u5c97\u4f4d\",\"content\":\"ga1ng we4i\",\"region\":{\"x1\":615,\"y1\":101,\"x2\":715,\"y2\":101,\"x3\":715,\"y3\":173,\"x4\":615,\"y4\":173},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5c97\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"ga3ng\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u4f4d\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"we4i\\\"}}],\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"pictureToPoetryAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}",
+      "{\"suggestedAnswer\":\"ji\u00e8 sh\u00e0o - \u4ecb\u7ecd\",\"content\":\"jie4 sha4o\",\"region\":{\"x1\":794,\"y1\":104,\"x2\":893,\"y2\":104,\"x3\":893,\"y3\":175,\"x4\":794,\"y4\":175},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u4ecb\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"jie4\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u7ecd\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"sha4o\\\"}}],\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}"
+    ]
+  },
+  {
+    "x1": 65,
+    "y1": 770,
+    "x2": 780,
+    "y2": 777,
+    "x3": 779,
+    "y3": 884,
+    "x4": 64,
+    "y4": 877,
+    "classIdx": 404,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\u4e00 \uff08   \uff09\u8718\u86db - \u4e00\u53ea\u8718\u86db\",\"content\":\"\u4e00 \uff08   \uff09\u8718\u86db\",\"region\":{\"x1\":90,\"y1\":839,\"x2\":299,\"y2\":839,\"x3\":299,\"y3\":884,\"x4\":90,\"y4\":884},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u4e00 \uff08   \uff09\u5927\u98ce - \u4e00\u573a\u5927\u98ce\uff0c\u4e00\u80a1\u5927\u98ce\uff0c\u4e00\u7247\u5927\u98ce\",\"content\":\"\u4e00 \uff08   \uff09\u5927\u98ce\",\"region\":{\"x1\":351,\"y1\":841,\"x2\":560,\"y2\":841,\"x3\":560,\"y3\":885,\"x4\":351,\"y4\":885},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u4e00 \uff08   \uff09\u7f51 - \u4e00\u5f20\u7f51\",\"content\":\"\u4e00 \uff08   \uff09\u7f51\",\"region\":{\"x1\":612,\"y1\":843,\"x2\":785,\"y2\":843,\"x3\":785,\"y3\":886,\"x4\":612,\"y4\":886},\"solution\":\"\"}"
+    ]
+  },
+  {
+    "x1": 30,
+    "y1": 63,
+    "x2": 1024,
+    "y2": 55,
+    "x3": 1027,
+    "y3": 387,
+    "x4": 33,
+    "y4": 394,
+    "classIdx": 405,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\u8f97\u8f67 - zh\u01cen y\u00e0\",\"content\":\"\u8f97\u8f67 \",\"region\":{\"x1\":98,\"y1\":122,\"x2\":259,\"y2\":122,\"x3\":259,\"y3\":157,\"x4\":98,\"y4\":157},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8654\u8bda - qi\u00e1n ch\u00e9ng\",\"content\":\"\u8654\u8bda \",\"region\":{\"x1\":385,\"y1\":116,\"x2\":553,\"y2\":116,\"x3\":553,\"y3\":150,\"x4\":385,\"y4\":150},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u5954\u6ce2 - b\u0113n b\u014d\",\"content\":\"\u5954\u6ce2 \",\"region\":{\"x1\":651,\"y1\":109,\"x2\":773,\"y2\":109,\"x3\":773,\"y3\":138,\"x4\":651,\"y4\":138},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u6028\u5929\u5c24\u4eba - yu\u00e0n ti\u0101n y\u00f3u r\u00e9n\",\"content\":\"\u6028\u5929\u5c24\u4eba \",\"region\":{\"x1\":853,\"y1\":104,\"x2\":1014,\"y2\":104,\"x3\":1014,\"y3\":133,\"x4\":853,\"y4\":133},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8d2a\u5a6a - t\u0101n l\u00e1n\",\"content\":\"\u8d2a\u5a6a \",\"region\":{\"x1\":99,\"y1\":180,\"x2\":289,\"y2\":180,\"x3\":289,\"y3\":218,\"x4\":99,\"y4\":218},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u5a07\u55d4 - ji\u0101o ch\u0113n\",\"content\":\"\u5a07\u55d4 \",\"region\":{\"x1\":392,\"y1\":169,\"x2\":551,\"y2\":169,\"x3\":551,\"y3\":203,\"x4\":392,\"y4\":203},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u659f\u914c - zh\u0113n zhu\u00f3\",\"content\":\"\u659f\u914c \",\"region\":{\"x1\":666,\"y1\":155,\"x2\":815,\"y2\":155,\"x3\":815,\"y3\":192,\"x4\":666,\"y4\":192},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u77ff\u51b6 - ku\u00e0ng y\u011b\",\"content\":\"\u77ff\u51b6 \",\"region\":{\"x1\":99,\"y1\":241,\"x2\":276,\"y2\":241,\"x3\":276,\"y3\":284,\"x4\":99,\"y4\":284},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u7f9e\u6da9 - xi\u016b s\u00e8\",\"content\":\"\u7f9e\u6da9 \",\"region\":{\"x1\":403,\"y1\":225,\"x2\":549,\"y2\":225,\"x3\":549,\"y3\":262,\"x4\":403,\"y4\":262},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u51db\u51bd - l\u01d0n li\u00e8\",\"content\":\"\u51db\u51bd \",\"region\":{\"x1\":680,\"y1\":207,\"x2\":803,\"y2\":207,\"x3\":803,\"y3\":245,\"x4\":680,\"y4\":245},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u81ea\u60ed\u5f62\u79fd - z\u00ec c\u00e1n x\u00edng hu\u00ec\",\"content\":\"\u81ea\u60ed\u5f62\u79fd \",\"region\":{\"x1\":892,\"y1\":195,\"x2\":1028,\"y2\":195,\"x3\":1028,\"y3\":229,\"x4\":892,\"y4\":229},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8346\u68d8 - j\u012bng j\u00ed\",\"content\":\"\u8346\u68d8 \",\"region\":{\"x1\":411,\"y1\":282,\"x2\":562,\"y2\":282,\"x3\":562,\"y3\":326,\"x4\":411,\"y4\":326},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u542e\u5438 - sh\u01d4n x\u012b\",\"content\":\"\u542e\u5438 \",\"region\":{\"x1\":698,\"y1\":259,\"x2\":838,\"y2\":259,\"x3\":838,\"y3\":302,\"x4\":698,\"y4\":302},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u9762\u9762\u76f8\u89d1 - mi\u00e0n mi\u00e0n xi\u0101ng q\u00f9\",\"content\":\"\u9762\u9762\u76f8\u89d1 \",\"region\":{\"x1\":908,\"y1\":244,\"x2\":1030,\"y2\":244,\"x3\":1030,\"y3\":281,\"x4\":908,\"y4\":281},\"solution\":\"\"}"
+    ]
+  },
+  {
+    "x1": 98,
+    "y1": 26,
+    "x2": 992,
+    "y2": 13,
+    "x3": 993,
+    "y3": 53,
+    "x4": 99,
+    "y4": 66,
+    "classIdx": 601,
+    "phase": 3,
+    "course": { "id": 3, "name": "\u82f1\u8bed" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"The workers want us to work together with them .\",\"content\":\"workers us want to work The together them with\",\"region\":{\"x1\":0,\"y1\":0,\"x2\":0,\"y2\":0,\"x3\":0,\"y3\":0,\"x4\":0,\"y4\":0}}"
+    ]
+  },
+  {
+    "x1": 87,
+    "y1": 152,
+    "x2": 906,
+    "y2": 154,
+    "x3": 905,
+    "y3": 483,
+    "x4": 86,
+    "y4": 480,
+    "classIdx": 511,
+    "phase": 3,
+    "course": { "id": 2, "name": "\u6570\u5b66" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"75\\\\times 50=3750\",\"content\":\"75\\\\times 50\",\"region\":{\"x1\":117,\"y1\":216,\"x2\":231,\"y2\":216,\"x3\":231,\"y3\":242,\"x4\":117,\"y4\":242},\"solution\":\"[{\\\"solutionName\\\":\\\"\u76f4\u63a5\u8ba1\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"75\\\\\\\\times 50=3750\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]}]\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"21\\\\times 24=504\",\"content\":\"21\\\\times 24\",\"region\":{\"x1\":440,\"y1\":218,\"x2\":554,\"y2\":218,\"x3\":554,\"y3\":243,\"x4\":440,\"y4\":243},\"solution\":\"[{\\\"solutionName\\\":\\\"\u76f4\u63a5\u8ba1\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"21\\\\\\\\times 24=504\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]}]\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"85\\\\times 40=3400\",\"content\":\"85\\\\times 40\",\"region\":{\"x1\":765,\"y1\":219,\"x2\":878,\"y2\":219,\"x3\":878,\"y3\":244,\"x4\":765,\"y4\":244},\"solution\":\"[{\\\"solutionName\\\":\\\"\u76f4\u63a5\u8ba1\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"85\\\\\\\\times 40=3400\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]}]\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"37\\\\times 25=925\",\"content\":\"37\\\\times 25\",\"region\":{\"x1\":116,\"y1\":457,\"x2\":230,\"y2\":457,\"x3\":230,\"y3\":482,\"x4\":116,\"y4\":482},\"solution\":\"[{\\\"solutionName\\\":\\\"\u76f4\u63a5\u8ba1\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"37\\\\\\\\times 25=925\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]}]\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"11\\\\times 62=682\",\"content\":\"11\\\\times 62\",\"region\":{\"x1\":471,\"y1\":459,\"x2\":583,\"y2\":459,\"x3\":583,\"y3\":483,\"x4\":471,\"y4\":483},\"solution\":\"[{\\\"solutionName\\\":\\\"\u76f4\u63a5\u8ba1\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"11\\\\\\\\times 62=682\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]}]\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"50\\\\times 46=2300\",\"content\":\"50\\\\times 46\",\"region\":{\"x1\":792,\"y1\":459,\"x2\":907,\"y2\":459,\"x3\":907,\"y3\":484,\"x4\":792,\"y4\":484},\"solution\":\"[{\\\"solutionName\\\":\\\"\u7b80\u4fbf\u8fd0\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"50\\\\\\\\times 46\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=50\\\\\\\\times 2\\\\\\\\times 23\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=100\\\\\\\\times 23\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"=2300\\\",\\\"computationExplanation\\\":\\\"\u8fdb\u884c\u4e58\u6cd5\u8fd0\u7b97\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]},{\\\"solutionName\\\":\\\"\u76f4\u63a5\u8ba1\u7b97\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"50\\\\\\\\times 46=2300\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]}]\",\"suggestedJsonAnswer\":\"\"}"
+    ]
+  },
+  {
+    "x1": 109,
+    "y1": 171,
+    "x2": 933,
+    "y2": 171,
+    "x3": 933,
+    "y3": 214,
+    "x4": 109,
+    "y4": 214,
+    "classIdx": 502,
+    "phase": 3,
+    "course": { "id": 2, "name": "\u6570\u5b66" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\\\\begin{cases}x_{1}=-0.5\\\\\\\\x_{2}=0.5\\\\end{cases}\",\"content\":\"24x^{2}-6=0\",\"region\":{\"x1\":147,\"y1\":182,\"x2\":265,\"y2\":182,\"x3\":265,\"y3\":204,\"x4\":147,\"y4\":204},\"solution\":\"[{\\\"solutionName\\\":\\\"\u56e0\u5f0f\u5206\u89e3\u6cd5\\\",\\\"solutionStepList\\\":[{\\\"computationProcess\\\":\\\"24x^{2}-6=0\\\",\\\"computationExplanation\\\":\\\"\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"(2x+1)(12x-6)=0\\\",\\\"computationExplanation\\\":\\\"\u65b9\u7a0b\u539f\u5f0f\u53ef\u5206\u89e3\u4e3a\u5982\u4e0b\u5f62\u5f0f\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"x_{1}=-0.5\\\",\\\"computationExplanation\\\":\\\"\u65b9\u7a0b\u7684\u4e00\u4e2a\u89e3\u4e3a\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"x_{2}=0.5\\\",\\\"computationExplanation\\\":\\\"\u65b9\u7a0b\u7684\u53e6\u4e00\u4e2a\u89e3\u4e3a\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true},{\\\"computationProcess\\\":\\\"\\\\\\\\begin{cases}x_{1}=-0.5\\\\\\\\\\\\\\\\x_{2}=0.5\\\\\\\\end{cases}\\\",\\\"computationExplanation\\\":\\\"\u65b9\u7a0b\u7684\u6700\u7ec8\u89e3\u4e3a\\\",\\\"setComputationProcess\\\":true,\\\"setComputationExplanation\\\":true}]}]\",\"suggestedJsonAnswer\":\"\"}"
+    ]
+  },
+  {
+    "x1": 52,
+    "y1": 121,
+    "x2": 935,
+    "y2": 145,
+    "x3": 928,
+    "y3": 390,
+    "x4": 45,
+    "y4": 366,
+    "classIdx": 407,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\u84dd \uff08   \uff09 - \u84dd\u5929\uff0c\u84dd\u8272\uff0c\u84dd\u84dd \u7bee \uff08   \uff09 - \u6447\u7bee\uff0c\u82b1\u7bee\uff0c\u7bee\u7403\",\"content\":\"\u84dd \u7bee\",\"region\":{\"x1\":93,\"y1\":180,\"x2\":259,\"y2\":180,\"x3\":259,\"y3\":266,\"x4\":93,\"y4\":266},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u9972 \uff08   \uff09 - \u9972\u517b\uff0c\u9972\u6599\uff0c\u9972\u5582 \u8bcd \uff08   \uff09 - \u8bcd\u8bed\uff0c\u8bcd\u53e5\uff0c\u5b8b\u8bcd\",\"content\":\"\u9972 \u8bcd\",\"region\":{\"x1\":317,\"y1\":184,\"x2\":484,\"y2\":184,\"x3\":484,\"y3\":271,\"x4\":317,\"y4\":271},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u7f9e \uff08   \uff09 - \u7f9e\u6127\uff0c\u5bb3\u7f9e\uff0c\u7f9e\u6da9 \u5dee \uff08   \uff09 - \u53c2\u5dee\uff0c\u5dee\u5f02\uff0c\u76f8\u5dee\",\"content\":\"\u7f9e \u5dee\",\"region\":{\"x1\":541,\"y1\":188,\"x2\":709,\"y2\":188,\"x3\":709,\"y3\":276,\"x4\":541,\"y4\":276},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8d54 \uff08   \uff09 - \u8d54\u507f\uff0c\u8d54\u793c\uff0c\u8d54\u7f6a \u966a \uff08   \uff09 - \u966a\u4f34\uff0c\u966a\u886c\uff0c\u966a\u5ac1\",\"content\":\"\u8d54 \u966a\",\"region\":{\"x1\":767,\"y1\":195,\"x2\":933,\"y2\":195,\"x3\":933,\"y3\":281,\"x4\":767,\"y4\":281},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u836f \uff08   \uff09 - \u836f\u6750\uff0c\u706b\u836f\uff0c\u4e2d\u836f \u7ea6 \uff08   \uff09 - \u5927\u7ea6\uff0c\u9690\u7ea6\uff0c\u7ea6\u5b9a\",\"content\":\"\u836f \u7ea6\",\"region\":{\"x1\":90,\"y1\":281,\"x2\":257,\"y2\":281,\"x3\":257,\"y3\":370,\"x4\":90,\"y4\":370},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8be5 \uff08   \uff09 - \u5e94\u8be5\uff0c\u6d3b\u8be5\uff0c\u672c\u8be5 \u523b \uff08   \uff09 - \u7acb\u523b\uff0c\u65f6\u523b\uff0c\u4e00\u523b\",\"content\":\"\u8be5 \u523b\",\"region\":{\"x1\":314,\"y1\":287,\"x2\":482,\"y2\":287,\"x3\":482,\"y3\":376,\"x4\":314,\"y4\":376},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u6cca \uff08   \uff09 - \u6f02\u6cca\uff0c\u6cca\u8239\uff0c\u591c\u6cca \u4f2f \uff08   \uff09 - \u4f2f\u7236\uff0c\u4f2f\u7259\uff0c\u4f2f\u4f2f\",\"content\":\"\u6cca \u4f2f\",\"region\":{\"x1\":538,\"y1\":291,\"x2\":707,\"y2\":291,\"x3\":707,\"y3\":380,\"x4\":538,\"y4\":380},\"solution\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8270 \uff08   \uff09 - \u8270\u96be\uff0c\u8270\u82e6\uff0c\u8270\u5de8 \u72e0 \uff08   \uff09 - \u72e0\u72e0\uff0c\u51f6\u72e0\uff0c\u72e0\u5fc3\",\"content\":\"\u8270 \u72e0\",\"region\":{\"x1\":764,\"y1\":297,\"x2\":932,\"y2\":297,\"x3\":932,\"y3\":386,\"x4\":764,\"y4\":386},\"solution\":\"\"}"
+    ]
+  }
+]

@@ -16,3 +16,10 @@ export function testBaiDu(data) {
     params:data
   })
 }
+
+export function classIdxData() {
+  return request({
+    url: '/article/classId',
+    method: 'get',
+  })
+}

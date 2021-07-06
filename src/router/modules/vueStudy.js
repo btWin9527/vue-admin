@@ -64,6 +64,12 @@ let vueStudyRouter = {
       meta: {title: 'vuexAlong'},
       name: 'vuexAlong',
     },
+    {
+      path: 'classIdx',
+      component: () => import('@/views/vuestudy/classIdx'),
+      meta: {title: 'classIdx'},
+      name: 'classIdx',
+    },
   ]
 };
 
