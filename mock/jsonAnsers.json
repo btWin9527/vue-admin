@@ -195,5 +195,172 @@
       "{\"suggestedAnswer\":\"\u6cca \uff08   \uff09 - \u6f02\u6cca\uff0c\u6cca\u8239\uff0c\u591c\u6cca \u4f2f \uff08   \uff09 - \u4f2f\u7236\uff0c\u4f2f\u7259\uff0c\u4f2f\u4f2f\",\"content\":\"\u6cca \u4f2f\",\"region\":{\"x1\":538,\"y1\":291,\"x2\":707,\"y2\":291,\"x3\":707,\"y3\":380,\"x4\":538,\"y4\":380},\"solution\":\"\"}",
       "{\"suggestedAnswer\":\"\u8270 \uff08   \uff09 - \u8270\u96be\uff0c\u8270\u82e6\uff0c\u8270\u5de8 \u72e0 \uff08   \uff09 - \u72e0\u72e0\uff0c\u51f6\u72e0\uff0c\u72e0\u5fc3\",\"content\":\"\u8270 \u72e0\",\"region\":{\"x1\":764,\"y1\":297,\"x2\":932,\"y2\":297,\"x3\":932,\"y3\":386,\"x4\":764,\"y4\":386},\"solution\":\"\"}"
     ]
+  },
+  {
+    "x1": 58,
+    "y1": 47,
+    "x2": 696,
+    "y2": 47,
+    "x3": 696,
+    "y3": 964,
+    "x4": 58,
+    "y4": 964,
+    "classIdx": 600,
+    "phase": 3,
+    "course": { "id": 3, "name": "\u82f1\u8bed" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"watching\",\"content\":\"She usually $ANSWS$0$ANSWE$ TV in the evening She is $ANSWS$1$ANSWE$ $REQUS$watch$REQUE$ TV in the living room now.\",\"region\":{\"x1\":247,\"y1\":61,\"x2\":376,\"y2\":61,\"x3\":376,\"y3\":101,\"x4\":247,\"y4\":101}}",
+      "{\"suggestedAnswer\":\"america\",\"content\":\"Li Ming is in $ANSWS$0$ANSWE$ now. And he goes to school by school bus just as $ANSWS$1$ANSWE$ $REQUS$America$REQUE$ students do.\",\"region\":{\"x1\":273,\"y1\":222,\"x2\":399,\"y2\":222,\"x3\":399,\"y3\":261,\"x4\":273,\"y4\":261}}",
+      "{\"suggestedAnswer\":\"swimming\",\"content\":\"Johnson can $ANSWS$0$ANSWE$ He usually goes $ANSWS$1$ANSWE$ $REQUS$swim$REQUE$ in his free time.\",\"region\":{\"x1\":240,\"y1\":378,\"x2\":361,\"y2\":378,\"x3\":361,\"y3\":412,\"x4\":240,\"y4\":412}}",
+      "{\"suggestedAnswer\":\"friends\",\"content\":\"My new classmates are $ANSWS$0$ANSWE$ to me. We soon become $ANSWS$1$ANSWE$ $REQUS$friend$REQUE$\",\"region\":{\"x1\":400,\"y1\":481,\"x2\":523,\"y2\":481,\"x3\":523,\"y3\":514,\"x4\":400,\"y4\":514}}",
+      "{\"suggestedAnswer\":\"twelfth\",\"content\":\"Today is my $ANSWS$0$ANSWE$ birthday So I am $ANSWS$1$ANSWE$ $REQUS$twelve$REQUE$ years old.\",\"region\":{\"x1\":238,\"y1\":573,\"x2\":347,\"y2\":573,\"x3\":347,\"y3\":607,\"x4\":238,\"y4\":607}}",
+      "{\"suggestedAnswer\":\"lending\",\"content\":\"Thank you for $ANSWS$0$ANSWE$ $REQUS$lend$REQUE$ this book to me\",\"region\":{\"x1\":262,\"y1\":666,\"x2\":371,\"y2\":666,\"x3\":371,\"y3\":699,\"x4\":262,\"y4\":699}}",
+      "{\"suggestedAnswer\":\"interesting\",\"content\":\"What do you think of English, Kangkang? I think it's very easy and $ANSWS$0$ANSWE$ $REQUS$interest$REQUE$\",\"region\":{\"x1\":411,\"y1\":757,\"x2\":525,\"y2\":757,\"x3\":525,\"y3\":787,\"x4\":411,\"y4\":787}}",
+      "{\"suggestedAnswer\":\"close\",\"content\":\"Tom, $ANSWS$0$ANSWE$ $REQUS$close$REQUE$ your book, please\",\"region\":{\"x1\":169,\"y1\":805,\"x2\":286,\"y2\":805,\"x3\":286,\"y3\":838,\"x4\":169,\"y4\":838}}",
+      "{\"suggestedAnswer\":\"danger\",\"content\":\"He is in $ANSWS$0$ANSWE$ $REQUS$dangerous$REQUE$ Let's save him\",\"region\":{\"x1\":192,\"y1\":849,\"x2\":307,\"y2\":849,\"x3\":307,\"y3\":880,\"x4\":192,\"y4\":880}}",
+      "{\"suggestedAnswer\":\"tickets\",\"content\":\"We've got two $ANSWS$0$ANSWE$ $REQUS$ticket$REQUE$ for the new film.\",\"region\":{\"x1\":298,\"y1\":889,\"x2\":415,\"y2\":889,\"x3\":415,\"y3\":922,\"x4\":298,\"y4\":922}}"
+    ]
+  },
+  {
+    "x1": 70,
+    "y1": 0,
+    "x2": 866,
+    "y2": 0,
+    "x3": 866,
+    "y3": 251,
+    "x4": 70,
+    "y4": 251,
+    "classIdx": 606,
+    "phase": 3,
+    "course": { "id": 3, "name": "\u82f1\u8bed" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"A\",\"content\":\"$ANSWS$0$ANSWE$ $OPTS$A. Sunday$OPTE$ $OPTS$B. September$OPTE$ $OPTS$C. October$OPTE$\",\"region\":{\"x1\":76,\"y1\":49,\"x2\":152,\"y2\":49,\"x3\":152,\"y3\":74,\"x4\":76,\"y4\":74}}",
+      "{\"suggestedAnswer\":\"C\",\"content\":\"$ANSWS$0$ANSWE$ $OPTS$A. coffee$OPTE$ $OPTS$B. milk$OPTE$ $OPTS$C. egg$OPTE$\",\"region\":{\"x1\":75,\"y1\":90,\"x2\":153,\"y2\":90,\"x3\":153,\"y3\":115,\"x4\":75,\"y4\":115}}",
+      "{\"suggestedAnswer\":\"C\",\"content\":\"$ANSWS$0$ANSWE$ $OPTS$A. dance$OPTE$ $OPTS$B. wash$OPTE$ $OPTS$C. museum$OPTE$\",\"region\":{\"x1\":75,\"y1\":135,\"x2\":150,\"y2\":135,\"x3\":150,\"y3\":162,\"x4\":75,\"y4\":162}}",
+      "{\"suggestedAnswer\":\"B\",\"content\":\"$ANSWS$0$ANSWE$ $OPTS$A. thirteen$OPTE$ $OPTS$B. first$OPTE$ $OPTS$C. three$OPTE$\",\"region\":{\"x1\":73,\"y1\":180,\"x2\":149,\"y2\":180,\"x3\":149,\"y3\":207,\"x4\":73,\"y4\":207}}",
+      "{\"suggestedAnswer\":\"C\",\"content\":\"$ANSWS$0$ANSWE$ $OPTS$A. pilot$OPTE$ $OPTS$B. doctor$OPTE$ $OPTS$C. nose$OPTE$\",\"region\":{\"x1\":73,\"y1\":226,\"x2\":151,\"y2\":226,\"x3\":151,\"y3\":251,\"x4\":73,\"y4\":251}}"
+    ]
+  },
+  {
+    "x1": 221,
+    "y1": 1,
+    "x2": 718,
+    "y2": 21,
+    "x3": 715,
+    "y3": 88,
+    "x4": 218,
+    "y4": 68,
+    "classIdx": 414,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\u7855\u5927 - shu\u00f2 d\u00e0\",\"content\":\"{\\\"ocrUserHandwork\\\":[],\\\"bestOcrUserHandwork\\\":\\\"\\\",\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u7855\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"shuo4\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5927\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"da4\\\"}}]}\",\"region\":{\"x1\":282,\"y1\":40,\"x2\":512,\"y2\":40,\"x3\":512,\"y3\":82,\"x4\":282,\"y4\":82},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u7855\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"shuo4\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5927\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"da4\\\"}}],\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}",
+      "{\"suggestedAnswer\":\"\u9aa4\u7136 - zh\u00f2u r\u00e1n\",\"content\":\"{\\\"ocrUserHandwork\\\":[],\\\"bestOcrUserHandwork\\\":\\\"\\\",\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u9aa4\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"zho4u\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u7136\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"ra2n\\\"}}]}\",\"region\":{\"x1\":573,\"y1\":49,\"x2\":796,\"y2\":49,\"x3\":796,\"y3\":85,\"x4\":573,\"y4\":85},\"solution\":\"\",\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u9aa4\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"zho4u\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u7136\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"ra2n\\\"}}],\\\"pinyinInContextAnswerContents\\\":null,\\\"sayingWritingAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}"
+    ]
+  },
+  {
+    "x1": 98,
+    "y1": 51,
+    "x2": 1024,
+    "y2": 74,
+    "x3": 1021,
+    "y3": 212,
+    "x4": 95,
+    "y4": 189,
+    "classIdx": 406,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"B \u953b\u7ec3 - \u953b\u70bc \u5174\u9ad8\u5f69\u70c8 - \u5174\u9ad8\u91c7\u70c8\",\"content\":\"$ANSWS$$ANSWE$$ROWS$A \u9ed8\u5951 \u7f05\u7538 \u9893\u5e9f \u85d5\u65ad\u4e1d\u8fde$ROWE$$ROWS$B \u953b\u7ec3 \u6454\u8de4 \u5760\u5730 \u5174\u9ad8\u5f69\u70c8$ROWE$$ROWS$C \u6c72\u53d6 \u8200\u6c34 \u70ed\u6795 \u5404\u6267\u5df1\u89c1$ROWE$$ROWS$D \u6495\u6253 \u9661\u5ced \u8f9f\u5982 \u5c42\u5ce6\u53e0\u5d82$ROWE$\",\"region\":{\"x1\":97,\"y1\":57,\"x2\":1018,\"y2\":57,\"x3\":1018,\"y3\":208,\"x4\":97,\"y4\":208},\"solution\":\"\"}"
+    ]
+  },
+  {
+    "x1": 101,
+    "y1": 316,
+    "x2": 882,
+    "y2": 314,
+    "x3": 883,
+    "y3": 440,
+    "x4": 102,
+    "y4": 442,
+    "classIdx": 402,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\u53cd\u4e49\u8bcd\uff1a\u96be\u8fc7 - \u9ad8\u5174\u3001\u597d\u53d7\u3001\u5feb\u6d3b\",\"content\":\"\u96be\u8fc7$ANSWS$$ANSWE$\",\"region\":{\"x1\":128,\"y1\":372,\"x2\":412,\"y2\":372,\"x3\":412,\"y3\":405,\"x4\":128,\"y4\":405},\"solution\":\"\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"\u53cd\u4e49\u8bcd\uff1a\u65e7 - \u65b0\",\"content\":\"\u65e7$ANSWS$$ANSWE$\",\"region\":{\"x1\":548,\"y1\":373,\"x2\":802,\"y2\":373,\"x3\":802,\"y3\":403,\"x4\":548,\"y4\":403},\"solution\":\"\",\"suggestedJsonAnswer\":\"\"}"
+    ]
+  },
+  {
+    "x1": 103,
+    "y1": 127,
+    "x2": 602,
+    "y2": 117,
+    "x3": 605,
+    "y3": 240,
+    "x4": 105,
+    "y4": 250,
+    "classIdx": 401,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\u8fd1\u4e49\u8bcd\uff1a\u76ca\u5904 - \u597d\u5904\u3001\u957f\u5904\u3001\u5229\u76ca\",\"content\":\"\u76ca\u5904$ANSWS$\u597d\u5904$ANSWE$\",\"region\":{\"x1\":126,\"y1\":159,\"x2\":327,\"y2\":159,\"x3\":327,\"y3\":199,\"x4\":126,\"y4\":199},\"solution\":\"\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8fd1\u4e49\u8bcd\uff1a\u8d5e\u626c - \u8912\u626c\u3001\u8868\u626c\u3001\u79f0\u8d5e\",\"content\":\"\u8d5e\u626c$ANSWS$\u8868\u626c$ANSWE$\",\"region\":{\"x1\":396,\"y1\":152,\"x2\":603,\"y2\":152,\"x3\":603,\"y3\":192,\"x4\":396,\"y4\":192},\"solution\":\"\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8fd1\u4e49\u8bcd\uff1a\u559c\u7231 - \u7231\u597d\u3001\u5ba0\u7231\u3001\u70ed\u7231\",\"content\":\"\u559c\u7231$ANSWS$\u559c\u6b22$ANSWE$\",\"region\":{\"x1\":123,\"y1\":202,\"x2\":327,\"y2\":202,\"x3\":327,\"y3\":245,\"x4\":123,\"y4\":245},\"solution\":\"\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"\u8fd1\u4e49\u8bcd\uff1a\u5947\u5999 - \u5965\u79d8\u3001\u795e\u5947\u3001\u5947\u5f02\",\"content\":\"\u5947\u5999$ANSWS$\u4f20\u5947$ANSWE$\",\"region\":{\"x1\":397,\"y1\":188,\"x2\":605,\"y2\":188,\"x3\":605,\"y3\":232,\"x4\":397,\"y4\":232},\"solution\":\"\",\"suggestedJsonAnswer\":\"\"}"
+    ]
+  },
+  {
+    "x1": 13,
+    "y1": 155,
+    "x2": 885,
+    "y2": 155,
+    "x3": 885,
+    "y3": 433,
+    "x4": 13,
+    "y4": 433,
+    "classIdx": 416,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\u4e25\uff08\u5389\uff09 \u7ecf\uff08\u5386\uff09 \u9f13\uff08\u52b1\uff09 \uff08\u5229\uff09\u5251\",\"content\":\"$HANZIS$\u5229$HANZIE$$HANZIS$\u5386$HANZIE$$HANZIS$\u5389$HANZIE$$HANZIS$\u52b1$HANZIE$$SUBS$$HANZIS$\u4e25$HANZIE$$ANSWS$0$ANSWE$$SUBE$$SUBS$$HANZIS$\u7ecf$HANZIE$$ANSWS$1$ANSWE$$SUBE$$SUBS$$HANZIS$\u9f13$HANZIE$$ANSWS$2$ANSWE$$SUBE$$SUBS$$ANSWS$3$ANSWE$$HANZIS$\u5251$HANZIE$$SUBE$\",\"region\":{\"x1\":66,\"y1\":208,\"x2\":882,\"y2\":208,\"x3\":882,\"y3\":304,\"x4\":66,\"y4\":304},\"solution\":\"\",\"suggestedJsonAnswer\":\"\"}",
+      "{\"suggestedAnswer\":\"\u6a21\uff08\u4eff\uff09 \u4f5c\uff08\u574a\uff09 \u82ac\uff08\u82b3\uff09 \uff08\u7eba\uff09\u7ec7\",\"content\":\"$HANZIS$\u4eff$HANZIE$$HANZIS$\u7eba$HANZIE$$HANZIS$\u574a$HANZIE$$HANZIS$\u82b3$HANZIE$$SUBS$$HANZIS$\u6a21$HANZIE$$ANSWS$0$ANSWE$$SUBE$$SUBS$$HANZIS$\u4f5c$HANZIE$$ANSWS$1$ANSWE$$SUBE$$SUBS$$HANZIS$\u82ac$HANZIE$$ANSWS$2$ANSWE$$SUBE$$SUBS$$ANSWS$3$ANSWE$$HANZIS$\u7ec7$HANZIE$$SUBE$\",\"region\":{\"x1\":64,\"y1\":323,\"x2\":887,\"y2\":323,\"x3\":887,\"y3\":435,\"x4\":64,\"y4\":435},\"solution\":\"\",\"suggestedJsonAnswer\":\"\"}"
+    ]
+  },
+  {
+    "x1": 96,
+    "y1": 46,
+    "x2": 984,
+    "y2": 46,
+    "x3": 984,
+    "y3": 196,
+    "x4": 96,
+    "y4": 196,
+    "classIdx": 602,
+    "phase": 3,
+    "course": { "id": 3, "name": "\u82f1\u8bed" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"for\",\"content\":\"four $REQUS$\u540c\u97f3\u8bcd$REQUE$ $ANSWS$0$ANSWE$\",\"region\":{\"x1\":838,\"y1\":52,\"x2\":966,\"y2\":52,\"x3\":966,\"y3\":90,\"x4\":838,\"y4\":90}}",
+      "{\"suggestedAnswer\":\"right\",\"content\":\"write $REQUS$\u540c\u97f3\u8bcd$REQUE$ $ANSWS$0$ANSWE$\",\"region\":{\"x1\":323,\"y1\":118,\"x2\":441,\"y2\":118,\"x3\":441,\"y3\":154,\"x4\":323,\"y4\":154}}",
+      "{\"suggestedAnswer\":\"black\",\"content\":\"white $REQUS$\u5bf9\u5e94\u8bcd$REQUE$ $ANSWS$0$ANSWE$\",\"region\":{\"x1\":861,\"y1\":102,\"x2\":985,\"y2\":102,\"x3\":985,\"y3\":142,\"x4\":861,\"y4\":142}}"
+    ]
+  },
+  {
+    "x1": 96,
+    "y1": 190,
+    "x2": 894,
+    "y2": 190,
+    "x3": 894,
+    "y3": 700,
+    "x4": 96,
+    "y4": 700,
+    "classIdx": 417,
+    "phase": 3,
+    "course": { "id": 1, "name": "\u8bed\u6587" },
+    "jsonAnswers": [
+      "{\"suggestedAnswer\":\"\",\"content\":\"$ENTRYS$$PINYINS$sha3n$PINYINE$$ANS_IDXS$0$ANS_IDXE$$ENTRYE$$ENTRYS$$PINYINS$dia4n$PINYINE$$ANS_IDXS$1$ANS_IDXE$$ENTRYE$\u8d8a\u6765\u8d8a\u4eae,$ENTRYS$$PINYINS$le2i$PINYINE$$ANS_IDXS$2$ANS_IDXE$$ENTRYE$$ENTRYS$$PINYINS$she1ng$PINYINE$$ANS_IDXS$3$ANS_IDXE$$ENTRYE$\u8d8a\u6765\u8d8a\u54cdO\",\"region\":{\"x1\":127,\"y1\":191,\"x2\":650,\"y2\":191,\"x3\":650,\"y3\":296,\"x4\":127,\"y4\":296},\"solution\":\"\",\"suggestedJsonAnswer\":\"\",\"subAnswers\":[{\"suggestedAnswer\":\"sha3n dia4n - \u95ea\u7535\",\"content\":\"{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u95ea\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"sha3n\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u7535\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"dia4n\\\"}}],\\\"bestOcrUserHandwork\\\":\\\"__\\\",\\\"ocrUserHandwork\\\":[{},{}],\\\"groupId\\\":0,\\\"show\\\":true}\",\"region\":{\"x1\":132,\"y1\":219,\"x2\":254,\"y2\":219,\"x3\":254,\"y3\":304,\"x4\":132,\"y4\":304},\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u95ea\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"sha3n\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u7535\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"dia4n\\\"}}],\\\"groupId\\\":0,\\\"show\\\":true},\\\"sayingWritingAnswerContents\\\":null,\\\"pictureToPoetryAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"},{\"suggestedAnswer\":\"le2i she1ng - \u96f7\u58f0\",\"content\":\"{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u96f7\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"le2i\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u58f0\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"she1ng\\\"}}],\\\"bestOcrUserHandwork\\\":\\\"__\\\",\\\"ocrUserHandwork\\\":[{},{}],\\\"groupId\\\":0,\\\"show\\\":true}\",\"region\":{\"x1\":409,\"y1\":219,\"x2\":528,\"y2\":219,\"x3\":528,\"y3\":313,\"x4\":409,\"y4\":313},\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u96f7\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"le2i\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u58f0\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"she1ng\\\"}}],\\\"groupId\\\":0,\\\"show\\\":true},\\\"sayingWritingAnswerContents\\\":null,\\\"pictureToPoetryAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}]}",
+      "{\"suggestedAnswer\":\"\",\"content\":\"\u592a\u9633\u662f\u4e2a$ENTRYS$$PINYINS$xia4ng$PINYINE$$ANS_IDXS$0$ANS_IDXE$$ENTRYE$$ENTRYS$$PINYINS$da3o$PINYINE$$ANS_IDXS$1$ANS_IDXE$$ENTRYE$\u5b83\u5728\u5929\u7a7a\u7ed9\u4f60$ENTRYS$$PINYINS$zhi3$PINYINE$$ANS_IDXS$2$ANS_IDXE$$ENTRYE$$ENTRYS$$PINYINS$dia3n$PINYINE$$ANS_IDXS$3$ANS_IDXE$$ENTRYE$$ENTRYS$$PINYINS$fa1ng$PINYINE$$ANS_IDXS$4$ANS_IDXE$$ENTRYE$$ENTRYS$$PINYINS$xia4ng$PINYINE$$ANS_IDXS$5$ANS_IDXE$$ENTRYE$\",\"region\":{\"x1\":126,\"y1\":322,\"x2\":825,\"y2\":322,\"x3\":825,\"y3\":431,\"x4\":126,\"y4\":431},\"solution\":\"\",\"suggestedJsonAnswer\":\"\",\"subAnswers\":[{\"suggestedAnswer\":\"xia4ng da3o - \u5411\u5bfc\",\"content\":\"{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5411\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"xia4ng\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5bfc\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"da3o\\\"}}],\\\"bestOcrUserHandwork\\\":\\\"__\\\",\\\"ocrUserHandwork\\\":[{},{}],\\\"groupId\\\":0,\\\"show\\\":true}\",\"region\":{\"x1\":235,\"y1\":352,\"x2\":361,\"y2\":352,\"x3\":361,\"y3\":445,\"x4\":235,\"y4\":445},\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5411\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"xia4ng\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5bfc\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"da3o\\\"}}],\\\"groupId\\\":0,\\\"show\\\":true},\\\"sayingWritingAnswerContents\\\":null,\\\"pictureToPoetryAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"},{\"suggestedAnswer\":\"zhi3 dia3n - \u6307\u70b9\",\"content\":\"{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6307\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"zhi3\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u70b9\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"dia3n\\\"}}],\\\"bestOcrUserHandwork\\\":\\\"__\\\",\\\"ocrUserHandwork\\\":[{},{}],\\\"groupId\\\":0,\\\"show\\\":true}\",\"region\":{\"x1\":567,\"y1\":351,\"x2\":679,\"y2\":351,\"x3\":679,\"y3\":436,\"x4\":567,\"y4\":436},\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6307\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"zhi3\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u70b9\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"dia3n\\\"}}],\\\"groupId\\\":0,\\\"show\\\":true},\\\"sayingWritingAnswerContents\\\":null,\\\"pictureToPoetryAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"},{\"suggestedAnswer\":\"fa1ng xia4ng - \u65b9\u5411\",\"content\":\"{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u65b9\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"fa1ng\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5411\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"xia4ng\\\"}}],\\\"bestOcrUserHandwork\\\":\\\"__\\\",\\\"ocrUserHandwork\\\":[{},{}],\\\"groupId\\\":0,\\\"show\\\":true}\",\"region\":{\"x1\":690,\"y1\":354,\"x2\":819,\"y2\":354,\"x3\":819,\"y3\":447,\"x4\":690,\"y4\":447},\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u65b9\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"fa1ng\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5411\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"xia4ng\\\"}}],\\\"groupId\\\":0,\\\"show\\\":true},\\\"sayingWritingAnswerContents\\\":null,\\\"pictureToPoetryAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}]}",
+      "{\"suggestedAnswer\":\"\",\"content\":\"\u822a\u5929\u5458\u5728\u592a\u7a7a\u4e2d$ENTRYS$$PINYINS$xi3$PINYINE$$ANS_IDXS$0$ANS_IDXE$$ENTRYE$$ENTRYS$$PINYINS$za3o$PINYINE$$ANS_IDXS$1$ANS_IDXE$$ENTRYE$\u5f88\u4e0d$ENTRYS$$PINYINS$ro2ng$PINYINE$$ANS_IDXS$2$ANS_IDXE$$ENTRYE$$ENTRYS$$PINYINS$yi4$PINYINE$$ANS_IDXS$3$ANS_IDXE$$ENTRYE$\u5f97\u4f7f\u7528\u5bc6\u5c01\u7684\u624d\u884cO\",\"region\":{\"x1\":126,\"y1\":457,\"x2\":822,\"y2\":457,\"x3\":822,\"y3\":676,\"x4\":126,\"y4\":676},\"solution\":\"\",\"suggestedJsonAnswer\":\"\",\"subAnswers\":[{\"suggestedAnswer\":\"xi3 za3o - \u6d17\u6fa1\",\"content\":\"{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6d17\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"xi3\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6fa1\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"za3o\\\"}}],\\\"bestOcrUserHandwork\\\":\\\"__\\\",\\\"ocrUserHandwork\\\":[{},{}],\\\"groupId\\\":0,\\\"show\\\":true}\",\"region\":{\"x1\":342,\"y1\":486,\"x2\":442,\"y2\":486,\"x3\":442,\"y3\":561,\"x4\":342,\"y4\":561},\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6d17\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"xi3\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6fa1\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"za3o\\\"}}],\\\"groupId\\\":0,\\\"show\\\":true},\\\"sayingWritingAnswerContents\\\":null,\\\"pictureToPoetryAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"},{\"suggestedAnswer\":\"ro2ng yi4 - \u5bb9\u6613\",\"content\":\"{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5bb9\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"ro2ng\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6613\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"yi4\\\"}}],\\\"bestOcrUserHandwork\\\":\\\"__\\\",\\\"ocrUserHandwork\\\":[{},{}],\\\"groupId\\\":0,\\\"show\\\":true}\",\"region\":{\"x1\":517,\"y1\":489,\"x2\":625,\"y2\":489,\"x3\":625,\"y3\":573,\"x4\":517,\"y4\":573},\"suggestedJsonAnswer\":\"{\\\"pinyinToHanziAnswerContents\\\":null,\\\"qaPinyinAnswerContents\\\":null,\\\"pinyinInContextAnswerContents\\\":{\\\"answerContents\\\":[{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u5bb9\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"ro2ng\\\"}},{\\\"chinese\\\":{\\\"type\\\":\\\"1\\\",\\\"content\\\":\\\"\u6613\\\"},\\\"pinyin\\\":{\\\"type\\\":\\\"2\\\",\\\"content\\\":\\\"yi4\\\"}}],\\\"groupId\\\":0,\\\"show\\\":true},\\\"sayingWritingAnswerContents\\\":null,\\\"pictureToPoetryAnswerContents\\\":null,\\\"poetryWritingAnswerContents\\\":null,\\\"textWritingAnswerContents\\\":null}\"}]}"
+    ]
   }
 ]
