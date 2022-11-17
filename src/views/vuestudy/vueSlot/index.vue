@@ -131,7 +131,7 @@ export default {
   margin-bottom: 20px;
   width: 200px;
 }
-.promptDialog /deep/ .el-dialog {
+.promptDialog::v-deep .el-dialog {
   transition: all 0.8s linear;
 }
 </style>
