@@ -70,6 +70,12 @@ let vueStudyRouter = {
       meta: {title: 'classIdx'},
       name: 'classIdx',
     },
+    {
+      path: 'v-model',
+      component: () => import('@/views/vuestudy/vModel'),
+      meta: {title: 'vModel'},
+      name: 'vModel',
+    },
   ]
 };
 
