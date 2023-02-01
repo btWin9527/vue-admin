@@ -5,6 +5,7 @@ import Layout from '@/layout'
 import vueStudyRouter from './modules/vueStudy'
 import nestedRouter from './modules/nested'
 import permissionRouter from './modules/permission'
+import chartsRouter from "./modules/charts"
 
 // 解决vue-router相同router跳转bug
 const routerPush = VueRouter.prototype.push
@@ -70,6 +71,7 @@ export const constantRoutes =
     },
     vueStudyRouter,
     nestedRouter,
+    chartsRouter
   ]
 // 权限路由
 export const asyncRoutes = permissionRouter;
