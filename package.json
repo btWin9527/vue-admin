@@ -9,7 +9,8 @@
     "build:stage": "vue-cli-service build --mode staging",
     "lint": "vue-cli-service lint",
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "new": "plop"
   },
   "dependencies": {
     "echarts": "4.2.1",
@@ -36,6 +37,7 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
+    "plop": "2.3.0",
     "@babel/core": "7.0.0",
     "@babel/plugin-proposal-optional-chaining": "^7.13.12",
     "@babel/register": "7.0.0",
