@@ -11,6 +11,12 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'customList',
+      component: () => import('@/views/vuestudy/customList'), // Parent router-view
+      name: 'customList',
+      meta: {title: 'customList'},
+    },
+    {
       path: 'gantt',
       component: () => import('@/views/vuestudy/gantt'), // Parent router-view
       name: 'gantt',
