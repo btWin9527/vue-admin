@@ -11,6 +11,12 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'signaturePad',
+      component: () => import('@/views/vuestudy/signaturePad'), // Parent router-view
+      name: 'signaturePad',
+      meta: {title: 'signaturePad'},
+    },
+    {
       path: 'table',
       component: () => import('@/views/vuestudy/table'), // Parent router-view
       name: 'table',
