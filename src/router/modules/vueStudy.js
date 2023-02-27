@@ -11,6 +11,12 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'formEdit',
+      component: () => import('@/views/vuestudy/formEdit'), // Parent router-view
+      name: 'formEdit',
+      meta: {title: 'formEdit'},
+    },
+    {
       path: 'signaturePad',
       component: () => import('@/views/vuestudy/signaturePad'), // Parent router-view
       name: 'signaturePad',

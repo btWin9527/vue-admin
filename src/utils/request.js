@@ -3,6 +3,7 @@ import {MessageBox, Message} from "element-ui";
 import store from "../store";
 import {getToken} from '@/utils/auth'
 import baseUrl from "../constant/baseUrl";
+import { requestInterceptor as cacheReqInterceptor, responseInterceptor as cacheResInterceptor } from '@/utils/requestCache/requestCache.js';
 
 // create an axios instance
 // config baseURL
@@ -23,6 +24,8 @@ service.interceptors.request.use(
     if (store.getters.token) {
       config.headers['X-Token'] = getToken();
     }
+    //  请求缓存
+    cacheReqInterceptor(config, axios);
     return config
   },
   error => {
@@ -77,6 +80,7 @@ service.interceptors.response.use(
       }
       return Promise.reject(new Error(res.message || 'Error'))
     } else {
+      cacheResInterceptor(response);
       return res
     }
   },

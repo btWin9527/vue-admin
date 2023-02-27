@@ -5,7 +5,9 @@ export function getArticle(data) {
   return request({
     url: '/article/list',
     method: 'get',
-    params:data
+    params:data,
+    // cache: true,
+    // setExpireTime: 300000
   })
 }
 // 测试接口(使用www.baidu.com域名)

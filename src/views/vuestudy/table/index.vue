@@ -57,6 +57,14 @@ export default {
   },
   methods: {
     async getArticle() {
+      // getArticle({
+      //   page: this.pageNum,
+      //   limit: this.pageSize,
+      // }).then((res) => {
+      //   console.log(res,'resssss')
+      // }).catch((err) => {
+      //   console.log(err,'rrr')
+      // })
       /*
       * 通过async/await处理接口返回异常
       * */
