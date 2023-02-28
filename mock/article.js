@@ -1,4 +1,5 @@
 import Mock from 'mockjs'
+import classIds from './jsonAnsers.json';
 
 const List = [];
 const count = 100;
@@ -112,6 +113,17 @@ export default [
       return {
         code: 20000,
         data: 'success'
+      }
+    }
+  },
+  // 自动解答数据测试
+  {
+    url: '/article/classId',
+    type: 'get',
+    response: _ => {
+      return {
+        code: 20000,
+        data: classIds
       }
     }
   }

@@ -1,4 +1,4 @@
-import moment from 'moment' //导入文件
+// import moment from 'moment' //导入文件
 export {parseTime, formatTime} from '@/utils'
 
 /**
@@ -74,9 +74,9 @@ export function uppercaseFirst(string) {
  * @param {String}          type  时间格式的类型
  * @return {String}               返回格式好的时间
  */
-export function formatDate(time, type) {
-  return moment(Number(time)).format(type);
-}
+// export function formatDate(time, type) {
+//   return moment(Number(time)).format(type);
+// }
 
 /* 处理货币格式化*/
 export function moneyReformat(value) {
