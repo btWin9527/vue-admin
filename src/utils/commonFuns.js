@@ -1,5 +1,4 @@
 import Qs from 'qs';
-import {cloneDeep} from "lodash-es";
 
 // generateReqKey ：用于根据当前请求的信息，生成请求 Key；
 export function generateReqKey(config) {
@@ -7,10 +6,7 @@ export function generateReqKey(config) {
   if (config && config.data && isJsonStr(config.data)) {
     config.data = JSON.parse(config.data);
   }
-  let {method, baseURL, url, params, data} = cloneDeep(config); // 请求方式，参数，请求地址，
-  if (url.startsWith(baseURL)) {
-    url = url.replace(baseURL, '')
-  }
+  let {method, url, params, data} = config; // 请求方式，参数，请求地址，
   return [method, url, Qs.stringify(params), Qs.stringify(data)].join('&'); // 拼接
 }
 

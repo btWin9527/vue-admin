@@ -1,5 +1,5 @@
-import Axios from 'axios';
 import {generateReqKey} from '../commonFuns';
+import request from "@/utils/request";
 
 const options = {
   storage: true, // 是否开启loclastorage缓存
@@ -62,7 +62,7 @@ let cacheHandler = {
 };
 let CACHES = new Proxy(_CACHES, cacheHandler);
 
-export function requestInterceptor(config, axios) {
+export function requestInterceptor(config) {
   // 开启缓存则保存请求结果和cancel 函数
   if (config.cache) {
     let data = CACHES[`${generateReqKey(config)}`];
@@ -71,27 +71,47 @@ export function requestInterceptor(config, axios) {
     config.setExpireTime ? (setExpireTime = config.setExpireTime) : (setExpireTime = options.expire);
     // 判断缓存数据是否存在 存在的话 是否过期 没过期就返回
     if (data && getNowTime() - data.expire < setExpireTime) {
-      config.cancelToken = new Axios.CancelToken(cancel => {
-        // cancel 函数的参数会作为 promise 的 error 被捕获
-        console.log(data,'ddddddd')
-        cancel(data.data);
-      }); // 传递结果到catch中
+      return data.data
     }
   }
 }
 
-export function responseInterceptor(response) {
+export function responseInterceptor(config, res) {
   // 返回的code === 200 时候才会缓存下来
-  if (response && response.config.cache && response.data.code === 20000) {
+  if (config && config.cache && res.code === 20000) {
     let data = {
       expire: getNowTime(),
-      data: response.data
+      data: res
     };
-    CACHES[`${generateReqKey(response.config)}`] = data;
+    CACHES[`${generateReqKey(config)}`] = data;
   }
 }
 
 // 获取当前时间戳
 function getNowTime() {
   return new Date().getTime();
+}
+
+/**
+ * 生成缓存数据
+ * @param {Object} requestConfig 请求数据配置
+ * @returns {Promise<unknown>}
+ */
+export function generateDataCache(requestConfig) {
+  return new Promise((resolve, reject) => {
+    let cacheData = requestInterceptor(requestConfig)
+    // 有缓存数据，且未过期，直接走缓存
+    if (cacheData) {
+      resolve(cacheData)
+    } else {
+      request(requestConfig).then((res) => {
+        // 缓存数据
+        responseInterceptor(requestConfig, res)
+        // 返回接口数据
+        resolve(res)
+      }).catch((err) => {
+        reject(err)
+      })
+    }
+  })
 }

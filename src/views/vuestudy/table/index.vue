@@ -57,14 +57,6 @@ export default {
   },
   methods: {
     async getArticle() {
-      // getArticle({
-      //   page: this.pageNum,
-      //   limit: this.pageSize,
-      // }).then((res) => {
-      //   console.log(res,'resssss')
-      // }).catch((err) => {
-      //   console.log(err,'rrr')
-      // })
       /*
       * 通过async/await处理接口返回异常
       * */
@@ -75,7 +67,6 @@ export default {
       if (listData && listData.code == 20000) {
         let {data} = listData;
         this.articleList = data.items;
-        console.log(this.articleList, ' this.articleList')
         this.totalSize = data.total;
       }
       if (listErr) throw new Error('Could not find article list');// 处理请求异常
