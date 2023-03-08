@@ -8,7 +8,7 @@ export function getArticle(data) {
     method: 'get',
     params: data,
     cache: true,
-    setExpireTime: 3000
+    setExpireTime: 300000
   })
 }
 
