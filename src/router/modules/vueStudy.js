@@ -28,12 +28,12 @@ let vueStudyRouter = {
       name: 'table',
       meta: {title: 'table'},
     },
-    {
-      path: 'gantt',
-      component: () => import('@/views/vuestudy/gantt'), // Parent router-view
-      name: 'gantt',
-      meta: {title: 'gantt'},
-    },
+    // {
+    //   path: 'gantt',
+    //   component: () => import('@/views/vuestudy/gantt'), // Parent router-view
+    //   name: 'gantt',
+    //   meta: {title: 'gantt'},
+    // },
     {
       path: 'vueslot',
       component: () => import('@/views/vuestudy/vueSlot'), // Parent router-view

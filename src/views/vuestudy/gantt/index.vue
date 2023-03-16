@@ -17,6 +17,11 @@
 </template>
 
 <script>
+/**
+ *   "react": "^16.6.3",
+ *   "react-dom": "^16.6.3",
+ *   "gantt-task-react": "^0.3.9",
+ */
 import {
   Gantt,
   Task,
