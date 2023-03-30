@@ -33,7 +33,8 @@
     "vue-socket.io": "^3.0.7",
     "vuera": "^0.2.3",
     "vuex": "^3.0.1",
-    "vuex-along": "^1.2.11"
+    "vuex-along": "^1.2.11",
+    "vue-full-calendar": "2.5.0"
   },
   "devDependencies": {
     "@babel/core": "7.0.0",

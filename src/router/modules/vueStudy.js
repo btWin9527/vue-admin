@@ -11,6 +11,12 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'fullCalender',
+      component: () => import('@/views/vuestudy/fullCalender'), // Parent router-view
+      name: 'fullCalender',
+      meta: {title: 'fullCalender'},
+    },
+    {
       path: 'formEdit',
       component: () => import('@/views/vuestudy/formEdit'), // Parent router-view
       name: 'formEdit',
