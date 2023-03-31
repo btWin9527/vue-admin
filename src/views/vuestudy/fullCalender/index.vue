@@ -1,100 +1,173 @@
 <template>
-  <div class="calendar">
-    <full-calendar :config="config" class="full-calender"/>
+  <div class="calendar-cont">
+    <div class="aside">
+      <!-- 小日历 -->
+      <searchCalendar
+        :date-type="dateType" :date-range="dateRange"
+        :default-date="selectMonth"
+        @selectCalender="selectCalender"/>
+    </div>
+    <!--    &lt;!&ndash; 取色器 &ndash;&gt;-->
+    <!--    <el-color-picker v-model="color"/>-->
+    <!-- 日历面板 -->
+    <div class="calendar">
+      <full-calendar
+        ref="calendar"
+        :config="config" class="full-calender"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import moment from 'moment'
 import {FullCalendar} from "vue-full-calendar";
-import 'fullcalendar/dist/locale/zh-cn'
-
+import 'fullcalendar/dist/locale/zh-cn';
+import searchCalendar
+  from "@/views/vuestudy/fullCalender/searchCalendar/index.vue";
 import "fullcalendar/dist/fullcalendar.min.css";
+import {
+  firstDay,
+  lastDay,
+  getMonthDate,
+  bindEvent,
+  calendarConfig
+} from "./helper";
 
 export default {
   components: {
-    FullCalendar
+    FullCalendar,
+    searchCalendar
   },
   name: 'vueFullCalendar',
   data() {
     return {
-      config: {
-        // 用于配置日历表头的参数，包括left、center和right三个子属性，分别表示表头左侧、中间和右侧的内容，可以使用预定义的按钮、自定义按钮、日期格式化字符串等进行配置
-        header: {
-          left: 'today',
-          center: 'prev title next',
-          // right: 'month,week,day'
+      // 当前日期范围
+      dateRange: [],
+      //当前选中的月份
+      selectMonth: this.$moment().format('YYYY-MM-DD'),
+      // 查询类型
+      dateType: 'month',
+      color: '#409EFF',
+      events: [
+        {
+          title: '123 \n test',
+          start: '2023-03-31 10:20:30',
+          end: '2023-03-31 11:20:30',
+          // 配置背景颜色
+          backgroundColor: '#999',
         },
-        // 用于设置日历支持的多种视图模式和相关的配置参数，可以自定义视图模式、标题、日期范围、事件格式化字符串等
-        // views: '',
-        // 用于设置日历的事件数据，可以使用一个数组或者一个返回数组的函数
-        events: [
-          {
-            title: 'test',
-            allDay: true,
-            start: moment(),
-            end: moment().add(1, 'd'),
-          },
-          {
-            title: 'test2',
-            allDay: true,
-            start: moment(),
-            end: moment().add(1, 'h'),
-          },
-          {
-            title: 'test3',
-            allDay: true,
-            start: moment(),
-            end: moment().add(2, 'h'),
-          },
-          {
-            title: 'another test',
-            start: moment().add(2, 'd'),
-            end: moment().add(2, 'd').add(2, 'h'),
-          },
-        ],
-        // 日期选择操作
-        selectable: false,
-        // 用于设置日历的默认视图模式，包括month、basicWeek、basicDay、agendaWeek和agendaDay五种视图模式
-        defaultView: 'month',
-        // 语言
-        locale: 'zh',
-        eventDurationEditable: false,
-        // 用于设置日历是否可编辑，包括事件的添加、修改和删除操作
-        editable: false,
-        // 用于设置日历事件在某个日期范围内的最大数量，可以通过一个“更多”链接展示所有事件
-        eventLimit: 2,
-        // 用于设置日历的事件数据源，可以使用一个数组或者一个返回数组的函数，每个数据源可以包含一个或多个事件
-        eventSources: [],
-        // 用于设置日历事件的渲染函数，可以用于自定义事件的HTML内容和CSS样式。
-        eventRender: function (event, element) {
-          // console.log(event)
+        {
+          title: 'test2',
+          start: '2023-03-31 10:20:30',
+          end: '2023-03-31 11:20:30',
         },
-        // 用于设置日历事件的调整大小事件处理函数，当用户调整一个事件的大小时，将调用该函数并传递事件对象和调整后的大小作为参数
-        eventResize: () => {
+        {
+          title: 'test3',
+          start: '2023-03-31 10:40:30',
+          end: '2023-03-31 11:50:30',
         },
-        // 用于设置日历事件的拖放事件处理函数，当用户拖动一个事件到另一个位置时，将调用该函数并传递事件对象和拖放后的位置作为参数
-        eventDrop: () => {
-          return false
+        {
+          title: 'another test',
+          start: '2023-04-02 10:20:30',
+          end: '2023-04-02 11:20:30',
         },
-        // 用于设置日历事件的单击事件处理函数，当用户单击一个事件时，将调用该函数并传递事件对象作为参数
-        eventClick: () => {
-          return false
-        },
-      },
+      ],
+      config: null
+    }
+  },
+  created() {
+    this.initConfig()
+    this.initEvent()
+  },
+  methods: {
+    initConfig() {
+      this.$set(this, 'config', calendarConfig(this.events))
+    },
+    initEvent() {
+      this.$nextTick(() => {
+        //点击上个月
+        this.clickPrevMonth()
+        // 点击下个月
+        this.clickNextMonth()
+        // 点击今天
+        this.clickToday()
+        // 点击月
+        this.changeMonthType()
+        // 点击周
+        this.changeWeekType()
+        // 点击日
+        this.changeDayType()
+      })
+    },
+    next() {
+      this.$refs.calendar?.fireMethod('next')
+    },
+    prev() {
+      this.$refs.calendar?.fireMethod('prev')
+    },
+    gotoDate(date) {
+      this.$refs.calendar?.fireMethod('gotoDate', date)
+    },
+    // 选中筛选日期
+    selectCalender(val) {
+      console.log(val, '小日历选择日期')
+      this.selectMonth = val;
+      this.gotoDate(new Date(val))
+    },
+    clickPrevMonth() {
+      bindEvent('.fc-prev-button', () => {
+        console.log('prev')
+        getMonthDate()
+      })
+    },
+    clickNextMonth() {
+      bindEvent('.fc-next-button', () => {
+        console.log('next')
+        getMonthDate()
+      })
+    },
+    clickToday() {
+      bindEvent('.fc-today-button', () => {
+        console.log('today')
+      })
+    },
+    changeMonthType() {
+      bindEvent('.fc-today-button', () => {
+        console.log('moth')
+      })
+    },
+    changeWeekType() {
+      bindEvent('.fc-agendaWeek-button', () => {
+        console.log('week')
+      })
+    },
+    changeDayType() {
+      bindEvent('.fc-agendaDay-button', () => {
+        console.log('day')
+      })
     }
   }
 }
 
 </script>
 <style scoped lang="scss">
-.calendar {
-  font-size: 14px;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+.calendar-cont {
+  display: flex;
+
+  .aside {
+    width: 300px;
+  }
+
+  .calendar {
+    flex: 1;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  }
 }
+
 
 .full-calender ::v-deep {
 
@@ -125,12 +198,13 @@ export default {
   /* 日历事件样式 */
   .fc-event {
     background-color: #007bff;
+    border: 1px solid transparent;
     color: #fff;
     border-radius: 3px;
   }
 
   .fc-event:hover {
-    background-color: #0056b3;
+    //background-color: #0056b3;
   }
 }
 </style>
