@@ -6,9 +6,9 @@
         :date-type="dateType" :date-range="dateRange"
         :default-date="selectMonth"
         @selectCalender="selectCalender"/>
+      <!-- 人员选择 -->
+      <personTree :tree-change="treeChange"/>
     </div>
-    <!--    &lt;!&ndash; 取色器 &ndash;&gt;-->
-    <!--    <el-color-picker v-model="color"/>-->
     <!-- 日历面板 -->
     <div class="calendar">
       <full-calendar
@@ -20,23 +20,23 @@
 </template>
 
 <script>
+import personTree from "@/views/vuestudy/fullCalender/personTree/index.vue";
 import {FullCalendar} from "vue-full-calendar";
 import 'fullcalendar/dist/locale/zh-cn';
 import searchCalendar
   from "@/views/vuestudy/fullCalender/searchCalendar/index.vue";
 import "fullcalendar/dist/fullcalendar.min.css";
 import {
-  firstDay,
-  lastDay,
   getMonthDate,
   bindEvent,
-  calendarConfig
+  calendarConfig,
 } from "./helper";
 
 export default {
   components: {
     FullCalendar,
-    searchCalendar
+    searchCalendar,
+    personTree
   },
   name: 'vueFullCalendar',
   data() {
@@ -47,7 +47,6 @@ export default {
       selectMonth: this.$moment().format('YYYY-MM-DD'),
       // 查询类型
       dateType: 'month',
-      color: '#409EFF',
       events: [
         {
           title: '123 \n test',
@@ -80,6 +79,9 @@ export default {
     this.initEvent()
   },
   methods: {
+    treeChange(_, {checkedNodes}) {
+      console.log(checkedNodes, '选中的节点')
+    },
     initConfig() {
       this.$set(this, 'config', calendarConfig(this.events))
     },
