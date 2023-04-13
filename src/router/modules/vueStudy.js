@@ -11,6 +11,12 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'vueGantt',
+      component: () => import('@/views/vuestudy/vue-gantt'), // Parent router-view
+      name: 'vueGantt',
+      meta: {title: 'vueGantt'},
+    },
+    {
       path: 'fullCalender',
       component: () => import('@/views/vuestudy/fullCalender'), // Parent router-view
       name: 'fullCalender',

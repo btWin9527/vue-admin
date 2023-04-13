@@ -27,6 +27,7 @@
     "resize-observer-polyfill": "^1.5.1",
     "vue": "^2.6.10",
     "vue-full-calendar": "^2.8.1-0",
+    "vue-gantt": "^1.0.3",
     "vue-giant-tree": "^0.1.2",
     "vue-router": "^3.0.3",
     "vue-signature-pad": "2.0.5",
