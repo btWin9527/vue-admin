@@ -21,6 +21,7 @@ import promiseHandle from "./utils/promise";// 导入promise方法嵌套handle
 if (process.env.NODE_ENV === 'production') {
   mockXHR()
 }
+// Vue.use(compDemo)
 // 配置socket.io
 /*
 * VueSocketIO({debug,connection,vuex.store,vuex.actionPrefix,vuex.mutationPrefix})

@@ -9,7 +9,7 @@ import GanttChart from './GanttChart.vue';
 
 export default {
   components: {
-    GanttChart
+    GanttChart,
   },
   data() {
     return {
