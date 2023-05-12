@@ -11,6 +11,12 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'cssDisplay',
+      component: () => import('@/views/vuestudy/cssDisplay'), // Parent router-view
+      name: 'cssDisplay',
+      meta: {title: 'cssDisplay'},
+    },
+    {
       path: 'vueGantt',
       component: () => import('@/views/vuestudy/vue-gantt'), // Parent router-view
       name: 'vueGantt',
