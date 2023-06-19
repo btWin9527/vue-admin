@@ -11,6 +11,18 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'excelRead',
+      component: () => import('@/views/vuestudy/excelRead'), // Parent router-view
+      name: 'excelRead',
+      meta: {title: 'excelRead'},
+    },
+    {
+      path: 'imgTrim',
+      component: () => import('@/views/vuestudy/imgTrim'), // Parent router-view
+      name: 'imgTrim',
+      meta: {title: 'imgTrim'},
+    },
+    {
       path: 'cssDisplay',
       component: () => import('@/views/vuestudy/cssDisplay'), // Parent router-view
       name: 'cssDisplay',
