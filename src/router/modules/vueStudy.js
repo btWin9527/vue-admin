@@ -11,6 +11,18 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'vue3HighLight',
+      component: () => import('@/views/vuestudy/vue3Highlight'), // Parent router-view
+      name: 'vue3HighLight',
+      meta: {title: 'vue3HighLight'},
+    },
+    {
+      path: 'vue3Demo',
+      component: () => import('@/views/vuestudy/vue3Demo'), // Parent router-view
+      name: 'vue3Demo',
+      meta: {title: 'vue3Demo'},
+    },
+    {
       path: 'excelRead',
       component: () => import('@/views/vuestudy/excelRead'), // Parent router-view
       name: 'excelRead',
@@ -57,12 +69,6 @@ let vueStudyRouter = {
       component: () => import('@/views/vuestudy/table'), // Parent router-view
       name: 'table',
       meta: {title: 'table'},
-    },
-    {
-      path: 'gantt',
-      component: () => import('@/views/vuestudy/gantt'), // Parent router-view
-      name: 'gantt',
-      meta: {title: 'gantt'},
     },
     {
       path: 'vueslot',
