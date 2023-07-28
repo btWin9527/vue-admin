@@ -11,6 +11,24 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'd3orgChart',
+      component: () => import('@/views/vuestudy/d3orgChart'), // Parent router-view
+      name: 'd3orgChart',
+      meta: {title: 'd3orgChart'},
+    },
+    // {
+    //   path: 'orgChart',
+    //   component: () => import('@/views/vuestudy/orgChart'), // Parent router-view
+    //   name: 'orgChart',
+    //   meta: {title: 'orgChart'},
+    // },
+    {
+      path: 'handsontable',
+      component: () => import('@/views/vuestudy/handsontable'), // Parent router-view
+      name: 'handsontable',
+      meta: {title: 'handsontable'},
+    },
+    {
       path: 'vue3HighLight',
       component: () => import('@/views/vuestudy/vue3Highlight'), // Parent router-view
       name: 'vue3HighLight',

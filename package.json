@@ -13,13 +13,14 @@
     "new": "plop"
   },
   "dependencies": {
-    "lodash-es": "^4.17.21",
     "async-validator": "^1.10.0",
     "axios": "0.18.1",
     "core-js": "^2.6.5",
+    "d3-org-chart": "^2.7.0",
     "echarts": "4.2.1",
     "element-ui": "2.15.13",
     "js-cookie": "2.2.0",
+    "lodash-es": "^4.17.21",
     "moment": "^2.24.0",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
