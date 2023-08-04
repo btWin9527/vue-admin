@@ -11,6 +11,12 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'scrollCalendar',
+      component: () => import('@/views/vuestudy/scrollCalendar'), // Parent router-view
+      name: 'scrollCalendar',
+      meta: {title: 'scrollCalendar'},
+    },
+    {
       path: 'd3orgChart',
       component: () => import('@/views/vuestudy/d3orgChart'), // Parent router-view
       name: 'd3orgChart',
