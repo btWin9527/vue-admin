@@ -13,7 +13,7 @@
           <div
             v-for="(day,dayIndex) in getDaysInMonth(month)"
             :key="dayIndex"
-            :class="['day']">
+            :class="['day',{ 'non-between-date': !isBetweenDate(day) }]">
             <div class="day-content" v-if="day.date && day.date()">
               <div>{{ day.date() }}</div>
               <!-- 当天信息 -->
@@ -52,11 +52,11 @@ export default {
     };
   },
   computed: {
+    // 获取开始时间和结束时间中间的月份
     diffMonth() {
-      const start = moment(this.startDate, 'YYYY-MM-DD');
-      const end = moment(this.endDate, 'YYYY-MM-DD');
+      const start = moment(this.startDate, 'YYYY-MM');
+      const end = moment(this.endDate, 'YYYY-MM');
       // 判断开始日期和结束日期中间相差几个月, 向上取整
-      console.log(end.diff(start, 'months', true),'Math.ceil(end.diff(start, \'months\', true))')
       return Math.ceil(end.diff(start, 'months', true));
     }
   },
@@ -64,6 +64,12 @@ export default {
     this.initDate()
   },
   methods: {
+    /**
+     * 判断给定日期是否在开始时间和结束时间之间
+     */
+    isBetweenDate(date) {
+      return moment(date).isBetween(this.startDate, this.endDate, null, '[]')
+    },
     /**
      * 获取给定日期是周几
      * @param date
@@ -149,8 +155,6 @@ export default {
       const diffDay = this.getWeekDay(firstDay) - 1;
       // 当月总共有多少天
       const daysInMonth = month.daysInMonth();
-      console.log(month, 'monthz')
-      console.log(daysInMonth, 'daysInMonth')
       // 填充上个月的天数空格
       const days = Array(diffDay).fill({}, 0)
       // 填充当前月份的天数
@@ -165,8 +169,7 @@ export default {
      */
     initDate() {
       const currentDate = moment(this.startDate, 'YYYY-MM-DD').clone();
-      for (let i = 0; i < this.diffMonth; i++) {
-        console.log(111)
+      for (let i = 0; i <= this.diffMonth; i++) {
         this.months.push(currentDate.clone());
         currentDate.add(1, 'month');
       }
@@ -207,5 +210,10 @@ export default {
   padding: 8px;
   height: 100px;
   border: 1px solid #ddd;
+}
+
+/* 非当前日期范围的日期样式 */
+.non-between-date {
+  color: #ccc;
 }
 </style>

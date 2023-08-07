@@ -3,7 +3,7 @@
     <calendar :start-date="startDate" :end-date="endDate">
       <template #dateCell="{day}">
         <div>
-          {{ day }}
+<!--          {{ day }}-->
         </div>
       </template>
     </calendar>
@@ -20,8 +20,8 @@ export default {
   },
   data() {
     return {
-      startDate: '2023-04-02',
-      endDate: '2023-07-02'
+      startDate: '2023-04-30',
+      endDate: '2023-05-04'
     }
   },
 }
