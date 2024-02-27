@@ -11,6 +11,12 @@ let vueStudyRouter = {
   },
   children: [
     {
+      path: 'sqlEditor',
+      component: () => import('@/views/vuestudy/sqlEditor'), // Parent router-view
+      name: 'sqlEditor',
+      meta: {title: 'sqlEditor'},
+    },
+    {
       path: 'scrollCalendar',
       component: () => import('@/views/vuestudy/scrollCalendar'), // Parent router-view
       name: 'scrollCalendar',

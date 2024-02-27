@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import locale from 'element-ui/lib/locale/lang/zh-CN' // 支持element国际化
 import '@/styles/index.scss' // 全局css样式
 import '@/permission' // 权限控制
+import dbClick from "@/directive/dbClick";
 import './icons' // icon
 import * as filters from './filters' // 导入全局过滤器
 /* 引入mock模拟接口*/
@@ -40,6 +41,8 @@ if (process.env.NODE_ENV === 'production') {
 Vue.use(ElementUI, {locale})
 Object.keys(filters).forEach(key => Vue.filter(key, filters[key]));// 注册过滤器
 Vue.config.productionTip = false
+// 全局指令
+Vue.directive('dbClick', dbClick);
 Vue.prototype.$moment = moment;// 将moment.js赋值到vue实例上
 Vue.prototype.$promise = promiseHandle;
 // moment.locale('zh-cn');//moment.js汉化
